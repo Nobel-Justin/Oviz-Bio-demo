@@ -2,7 +2,7 @@
 The 'Landscape' visualization is frequently utilized to provide a systematic illustration of integrative data from multiple layers of batch samples, which are always compared to each other on certain attributes, such as genes and biological pathways mutated in cancers. This online 'Landscape' visualization is designed as a fixed part (histogram and gene-panels) with additional panels (e.g., age, gender, and histology). To visualize data, upload a **CSV** file in the *required* format and use sidebar options to customize the display.
 
 # Landscape Data (CSV file)
-The uploaded **CSV** file must match the *required* format. Several demo files from **References** are provided in <a href="https://github.com/Nobel-Justin/BTDraw" target="_blank">BTDraw</a> GitHub project.
+The uploaded **CSV** file must match the *required* format. Several demo files from **References** are provided in <a href="https://github.com/Nobel-Justin/BTDraw/tree/master/Landscape/demo_csv" target="_blank">BTDraw</a> GitHub project.
 
 - **header**<br/>
   The first line is header which contains information keywords.
