@@ -1,10 +1,14 @@
 ###Version
 v1.0.6 (2019-11-23)
+
 ###Developer
 Mr. LI Hechen (<a href="https://github.com/lhc70000" target="_blank">GitHub</a>)
+
 ###Designer
 Dr. JIA Wenlong (<a href="https://scholar.google.com.hk/citations?user=eupQCQEAAAAJ" target="_blank">Scholar</a>, <a href="https://orcid.org/0000-0002-7136-9919" target="_blank">ORCID</a>, <a href="https://github.com/Nobel-Justin" target="_blank">GitHub</a>)
+
 ###Updates
+
 #####v1.0.6
    - unifies the display of 'N/A'.
    - display Histogram name if given.
