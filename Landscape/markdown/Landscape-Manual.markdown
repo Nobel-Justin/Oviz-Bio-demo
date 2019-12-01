@@ -20,7 +20,7 @@ The uploaded **CSV** file must match the *required* format as specified below. S
   - Generally, in cancer research, genes are always annotated with more information, such as their **pathway**, **GO** ontology, certain **comments**, and **P-value** or **Q-value** representing their mutated significance in batch samples. These information (if given) will be shown at the '**right-area**' of **gene-panel** as tags, matrix or histogram.
      - for each **pathway**, add a row with key **`g_Pathway`** as the `SampleID` in the first column and specify the **Pathway** name (e.g., Adhesion) for each gene in other columns. Use `N/A` for not-available. (displayed as tags)
      - for each **GO** ontology, add a row with key **`g_GO`** as the `SampleID` in the first column and specify the **GO** name (e.g., Metabolic) for each gene in other columns. Use `N/A` for not-available. (displayed as tags)
-     - for **comments**, add a row with key **`g_Comments_[name]`** in the `SampleID` column, where `[name]`  should be the comments name, e.g., **g_Comments_[COSMIC](https://cancer.sanger.ac.uk/cosmic)**. Values for comments _must_ be boolean (`Y` or `N`), numeric values (e.g., 10 or 15.3), or `N/A`. (displayed as matrix)
+     - for **comments**, add a row with key **`g_Comments_[name]`** in the `SampleID` column, where `[name]`  should be the comments name, e.g., **g\_Comments\_[COSMIC](https://cancer.sanger.ac.uk/cosmic)**. Values for comments _must_ be boolean (`Y` or `N`), numeric values (e.g., 10 or 15.3), or `N/A`. (displayed as matrix)
      - for **P-value**, add a row with key **`g_P_value`** in the `SampleID` column and **_P_-value** (e.g., 0.001 or 3E-8) for each gene in other cells. Use 'N/A' for not-available. (displayed as histogram)
      - for **Q-value**, all should be the same as **P-value** except that the key should be `g_Q_value`. (displayed as histogram)
 - **histogram** (`ht` columns)<br/>
@@ -33,7 +33,8 @@ The uploaded **CSV** file must match the *required* format as specified below. S
   - Although it's not common, user can omit `ht` columns to avoid displaying any histogram in the figure.
 - **additional panels**<br/>
   Add columns to show additional panels (more information on samples) at the bottom of the visualization. Each panel might contain several attributes belonging to one category, e.g., panel 'Individual-Info' contains attributes like age, gender, smoking.
-  - The column name key should follow the `[PanelName]_[AttributeName]` format, e.g., `Individual-Info_age` and `Individual-Info_gender`. Note that please avoid using '_' in **PanelName**s. Do not worry about panel naming because the sidebar provides options to customize the displaying name of each panel, where users can choose their preferred name such as '**Individual_Info**' or '**Individual Info**'.
+  - The column name key should follow the `[PanelName]_[AttributeName]` format, e.g., `Individual-Info_age` and `Individual-Info_gender`.<br/>
+    Note that please avoid using '\_' in **PanelName**s. Do not worry about panel naming because the sidebar provides options to customize the displaying name of each panel, where users can choose their preferred name such as '**Individual\_Info**' or '**Individual Info**'.
   - The cell content could be strings, numeric values, or `N/A`.
      - __*strings*__: It is always used for *classifications*, e.g., gender ('Female' and 'Male'). We accept **maximum six** classifications besides `N/A`. An attribute will be considered as a *classifications* type as long as *strings* is found in any cell in its column.
      - __*numeric values*__: It is always used for continuously distributed numeric attributes, e.g., age. The attribute will be shown in **gradient color** ranging from the minimum value to the maximum value. Considering that sometimes the numeric values may be used for *classifications*, e.g., tumor stages (1,2,3), OR, users just want to design groups corresponding to several value ranges, we provide related options in the sidebar to cover such usages. Note here that the *classifications* sill needs to subject to the **maximum six** requirements.
@@ -54,9 +55,9 @@ There are four types of interactions: *Highlights*, *Tooltips*, *External Link* 
      - __*right-area*__: At __*gene-comments*__ matrix, Gene name, comments name, and comments value. At __*P/Q-value*__ histogram, Gene name, and P/Q-value.
   - __*other-panels*__: SampleID, attribute name and value.
 - **External Link**<br/>
-  - __*gene name*__: links to <a href="https://www.genecards.org/" target="_blank">genecard</a> search webpage.
-  - __*pathway*__: links to <a href="https://www.kegg.jp/" target="_blank">kegg pathway</a> search webpage.
-  - __*GO*__: links to <a href="http://amigo.geneontology.org/" target="_blank">amigo</a> search webpage.
+  - __*gene name*__: links to [genecard](https://www.genecards.org/) search webpage.
+  - __*pathway*__: links to [kegg pathway](https://www.kegg.jp/) search webpage.
+  - __*GO*__: links to [amigo](http://amigo.geneontology.org/) search webpage.
 - **Download**<br/>
   One SVG file will be generated when the '**Download**' button is clicked. Two themes are supplied: the default theme with a dark background and the light theme with white background. To use the light theme, please click the '**Light Theme**' button.
 
