@@ -2,7 +2,8 @@
 The 'LandScape' visualization is frequently utilized to provide a systematic illustration of integrative data from multiple layers of batch samples, which are always compared to each other on certain attributes, such as genes and biological pathways mutated in cancers. This online 'LandScape' visualization is designed as a fixed part (histogram and gene-panels) with additional panels (e.g., age, gender, and histology). To visualize data, upload a **CSV** file in the *required* format and use sidebar options to customize the display.
 
 # LandScape Data (CSV file)
-The uploaded **CSV** file must match the *required* format as specified below. Several demo files from the **References** are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/LandScape/demo_csv) project.
+The uploaded **CSV** file must match the *required* format as specified below.<br/>
+Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/demo_csv/landscape_demo.csv). Additional demo files from the **[References](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/markdown/LandScape-References.markdown)** are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/LandScape/demo_csv) project.
 
 - **header**<br/>
   The first line of the file should be a header that contains column names as keys.
