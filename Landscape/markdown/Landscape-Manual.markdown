@@ -1,8 +1,8 @@
 # Introduction
-The 'Landscape' visualization is frequently utilized to provide a systematic illustration of integrative data from multiple layers of batch samples, which are always compared to each other on certain attributes, such as genes and biological pathways mutated in cancers. This online 'Landscape' visualization is designed as a fixed part (histogram and gene-panels) with additional panels (e.g., age, gender, and histology). To visualize data, upload a **CSV** file in the *required* format and use sidebar options to customize the display.
+The 'LandScape' visualization is frequently utilized to provide a systematic illustration of integrative data from multiple layers of batch samples, which are always compared to each other on certain attributes, such as genes and biological pathways mutated in cancers. This online 'LandScape' visualization is designed as a fixed part (histogram and gene-panels) with additional panels (e.g., age, gender, and histology). To visualize data, upload a **CSV** file in the *required* format and use sidebar options to customize the display.
 
-# Landscape Data (CSV file)
-The uploaded **CSV** file must match the *required* format as specified below. Several demo files from the **References** are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/Landscape/demo_csv) project.
+# LandScape Data (CSV file)
+The uploaded **CSV** file must match the *required* format as specified below. Several demo files from the **References** are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/LandScape/demo_csv) project.
 
 - **header**<br/>
   The first line of the file should be a header that contains column names as keys.
@@ -45,7 +45,7 @@ The uploaded **CSV** file must match the *required* format as specified below. S
 There are four types of interactions: *Highlights*, *Tooltips*, *External Link* and *Download*.
 
 - **Highlights**<br/>
-  When the mouse moves on the landscape figure, the column (sample) and row (gene or attribute) it points to will be highlighted.
+  When the mouse moves on the LandScape figure, the column (sample) and row (gene or attribute) it points to will be highlighted.
 - **Tooltips**<br/>
   Tooltips will show necessary information of object that the mouse points to.
   - __*histogram*__: SampleID, and value of the stacked area where the mouse points.
@@ -66,7 +66,7 @@ The sidebar provides diverse options to fine-tune the display, such as manage fi
 
 - **Files**
   - __*Manage Files*__: checklist of CSV files uploaded previously, delete or download the CSV files.
-  - __*Upload*__: upload landscape CSV file. Note that the duplicated file name will be alerted and given a random postfix.
+  - __*Upload*__: upload LandScape CSV file. Note that the duplicated file name will be alerted and given a random postfix.
   - __*Choose*__: choose files uploaded previously. Note that this function is ONLY available to registered users (each account has certain storage).
   - __*File Sets*__: NOT available to this page.
 - **General**
