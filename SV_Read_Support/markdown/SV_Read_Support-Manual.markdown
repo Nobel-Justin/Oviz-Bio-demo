@@ -27,6 +27,7 @@ Then, it list all supporting split reads, ordered by:
   |`d`|The current read is duplicated|
 
 + `read_position`, the read start position aligned to reconstructed SV haplotype.
+
   ```
    |<-   5'segment   ->| inner_ins |<- 3'  segment  ->|
    |xxxxxxxxxxxxxxxxxxx|iiiiiiiiiii|xxxxxxxxxxxxxxxxxx|
@@ -37,6 +38,7 @@ Then, it list all supporting split reads, ordered by:
                   ^
   read_position: -5
   ```
+  
 + `read_seq`, the read sequence;
 + `read_qual`, the read sequence quality.
 
