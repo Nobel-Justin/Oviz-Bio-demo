@@ -1,5 +1,5 @@
 # Introduction
-Linkage heatmap is an useful method to visualize read linkage patterns on SV event, especially in studies with long-range sequencing data, such as 10x linked-reads. We apply the 'SV: Heatmap' visualization to display the heatmap matrix based on sequencing reads linkage between two local windowlized regions of SV case. The color depth of each cross-linked window pair is proportional to the number of linkages. Along the chromosome coordinate axis of the heatmap matrix, annotation information is added, such as Ensembl genes. To visualize data, upload a **TXT** file in the *required* format, and then use sidebar options to adjust heatmap color scheme and choose other SVs to display if uploaded data contains multiple cases.
+Linkage heatmap is an useful method to visualize read linkage patterns on SV event, especially in studies with long-range sequencing data, such as 10x linked-reads and HiC data [1,2,3]. We apply the 'SV: Heatmap' visualization to display the heatmap matrix based on sequencing reads linkage between two local windowlized regions of SV case. The color depth of each cross-linked window pair is proportional to the number of linkages. Along the chromosome coordinate axis of the heatmap matrix, annotation information is added, such as Ensembl genes. To visualize data, upload a **TXT** file in the *required* format, and then use sidebar options to adjust heatmap color scheme and choose other SVs to display if uploaded data contains multiple cases.
 
 # SV:Heatmap Data (TXT file)
 The uploaded **TXT** file must match the *required* format. Several demo files from **References** are provided in <a href="https://github.com/Nobel-Justin/BTDraw/tree/master/SV_Heatmap/demo_data" target="_blank">BTDraw</a> GitHub project.
@@ -7,10 +7,12 @@ The uploaded **TXT** file must match the *required* format. Several demo files f
 User can generate the heatmap.txt files using `linkage_heatmap.py` in https://github.com/paprikachan/ComplexSV.
 
 The demo output file `demo_data/10x.txt` starts with "sv" section.
+
 ```
 #sv
 chr11	76139879	+	chr2	63328429	-   VARTYPE=BND:TRX-tt
 ```
+
 It stores the breakpoints information of SV event, ordered by:
 
 | chrom_5p |  bkpos_5p |  strand_5p | chrom_3p |  bkpos_3p |  strand_3p | meta_info |
@@ -20,14 +22,17 @@ It stores the breakpoints information of SV event, ordered by:
 where `chrom_5p`, `bkpos_5p`, `strand_5p` respectively stands for the chromosome, position, strand of 5' breakpoint, and `chrom_3p`, `bkpos_3p`, `strand_3p` respectively stands for the chromosome, position, strand of 3' breakpoint. `meta_info` stores the meta information, such as the variation type of the SV.
 
 The second section is "heatmap" section, it starts with the comment:
+
 ```
 #heatmap    linkage_type=10x barcode
 ```
+
 where `linkage_type` specifies the type of read linkage used to count, now we support to show "10x barcode" and "Pair End" linkage type.
 
 For a SV event with two breakpoints, expand the breakpoint with `1000bp`, we can generate four region pairs and their shared linkage count matrix.
 
 Region pair 1: vertical region is `(bkpos_5p-1000bp, bkpos_5p+1000bp)` and horizontal region is `(bkpos_5p-1000bp, bkpos_5p+1000bp)`.
+
 ```
 v=chr2:63327429-63329429	h=chr2:63327429-63329429	resolution=100	axis=0,0
 63.0,34.0,35.0,32.0,21.0,...
@@ -37,7 +42,9 @@ v=chr2:63327429-63329429	h=chr2:63327429-63329429	resolution=100	axis=0,0
 21.0,36.0,40.0,40.0,83.0,...
 ...
 ```
+
 Region pair 2: vertical region is `(bkpos_5p-1000bp, bkpos_5p+1000bp)` and horizontal region is `(bkpos_3p-1000bp, bkpos_3p+1000bp)`.
+
 ```
 v=chr2:63327429-63329429	h=chr11:76138879-76140879	resolution=100	axis=1,0
 8.0,14.0,7.0,8.0,11.0,...
@@ -47,7 +54,9 @@ v=chr2:63327429-63329429	h=chr11:76138879-76140879	resolution=100	axis=1,0
 8.0,13.0,13.0,16.0,13.0,...
 ...
 ```
+
 Region pair 3: vertical region is `(bkpos_3p-1000bp, bkpos_3p+1000bp)` and horizontal region is `(bkpos_5p-1000bp, bkpos_5p+1000bp)`.
+
 ```
 v=chr11:76138879-76140879	h=chr2:63327429-63329429	resolution=100	axis=0,1
 8.0,9.0,14.0,9.0,8.0,...
@@ -57,7 +66,9 @@ v=chr11:76138879-76140879	h=chr2:63327429-63329429	resolution=100	axis=0,1
 11.0,13.0,15.0,13.0,13.0,...
 ...
 ```
+
 Region pair 4: vertical region is `(bkpos_3p-1000bp, bkpos_3p+1000bp)` and horizontal region is `(bkpos_3p-1000bp, bkpos_3p+1000bp)`.
+
 ```
 v=chr11:76138879-76140879	h=chr11:76138879-76140879	resolution=100	axis=1,1
 80.0,52.0,27.0,42.0,33.0,...
