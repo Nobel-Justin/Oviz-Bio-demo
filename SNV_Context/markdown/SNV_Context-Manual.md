@@ -36,7 +36,7 @@ Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-de
     | chr1  | 11174854  | 11175054 |
 
 # Display Interactions
-There are three types of interactions: *Tooltips*, *transparent bins* and *Download*.
+There are three types of interactions: *Tooltips*, *Transparent Bins* and *Download*.
 
 - **Tooltips**<br/>
     Tooltips shows necessary information of the object the mouse points to.
