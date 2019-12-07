@@ -37,3 +37,4 @@ The sidebar provides options to manage files and reorder samples.
   - __*File Sets*__: NOT available to this page.
 - **Settings**
   In settings, you can reorder samples by ascending or descending order of the sample name or the fraction of a certain signature.
+  
