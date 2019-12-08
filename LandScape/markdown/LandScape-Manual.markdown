@@ -63,7 +63,7 @@ There are four types of interactions: *Highlights*, *Tooltips*, *External Link* 
   One SVG file will be generated when the '**Download**' button is clicked. Two themes are supplied: the default theme with a dark background and the light theme with white background. To use the light theme, please click the '**Light Theme**' button.
 
 # Sidebar Functions
-The sidebar provides diverse options to fine-tune the display, such as manage files, reset size and color, group and reorder objects, and so on.
+The sidebar provides diverse options to fine-tune the display, such as managing files, resetting size and color, grouping and reordering objects, and so on.
 
 - **Files**
   - __*Manage Files*__: checklist of CSV files uploaded previously, delete or download the CSV files.

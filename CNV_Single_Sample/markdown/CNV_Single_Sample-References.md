@@ -1,0 +1,1 @@
+1. MAYRHOFER, M., DILORENZO, S. and ISAKSSON, A. (2013). [Patchwork: allele-specific copy number analysis of whole-genome sequenced tumor tissue.](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-3-r24) *Genome Biology*, 14(3):R24. (PMID: [23531354](https://www.ncbi.nlm.nih.gov/pubmed/23531354), *See __Figure 3__*)<br/>
