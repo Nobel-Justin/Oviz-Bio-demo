@@ -1,18 +1,17 @@
 # Introduction
-The 'Signature Dist' visualization shows the fraction of signatures within individual samples. It can also be used to show the fraction of signatures within each cancer type.
+The 'Signature Dist' visualization shows the fraction of signatures within individual samples. It can also be used to show the fraction of signatures within several cancer types.
 
-# Signature Data (CSV file)
+# Signature Dist Data (CSV file)
 The uploaded **CSV** file must match the *required* format as specified below.<br/>
 Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Signature_dist/demo_data/sig_dist.csv).
+
 - **header**<br/>
   The first line of the file should be a header that contains column names as keys. The header should follow the following format:
-
-    | Observations |  T38_Stomach | TCGA_BR_7197_01A_11D_2201_08_Stomach | TCGA_D7_5578_01A_01D_1600_08_Stomach |
-    |---|---|---|---|
-    | processes1  | 5.363950322  | 21.10195793 | 13.46599926 |
-
-    - `Observations` takes the values of the names of signatures.
-    - keys like `T38_Stomach` is the name of an individual sample. The number of keys is not limited.
+  | Observations |  T38_Stomach | TCGA_BR_7197_01A_11D_2201_08_Stomach | TCGA_D7_5578_01A_01D_1600_08_Stomach |
+  |---|---|---|---|
+  | processes1  | 5.363950322  | 21.10195793 | 13.46599926 |
+  - `Observations` takes the values of the names of signatures.
+  - keys like `T38_Stomach` is the name of an individual sample. The number of keys is not limited.
 
 - **rows**<br/>
   Each row in the file is the measure of a specified signature in each individual sample. Note that this measure does not have to be normalized.
@@ -32,9 +31,8 @@ The sidebar provides options to manage files and reorder samples.
 
 - **Files**
   - __*Manage Files*__: checklist of CSV files uploaded previously, delete or download the CSV files.
-  - __*Upload*__: upload Signature CSV file. Note that the duplicated file name will be alerted and given a random postfix.
+  - __*Upload*__: upload Signature Dist CSV file. Note that the duplicated file name will be alerted and given a random postfix.
   - __*Choose*__: choose files uploaded previously. Note that this function is ONLY available to registered users (each account has certain storage).
   - __*File Sets*__: NOT available to this page.
-- **Settings**
-  In settings, you can reorder samples by ascending or descending order of the sample name or the fraction of a certain signature.
-  
+- **Settings**<br/>
+  In settings, user can reorder samples by ascending or descending order of the sample name or the fraction of a certain signature.
