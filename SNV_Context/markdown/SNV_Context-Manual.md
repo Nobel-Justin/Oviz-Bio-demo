@@ -59,8 +59,4 @@ The sidebar provides diverse options to fine-tune the display, namely managing f
   - __*Remove Button*__: click to enter removing mode. In this mode, when you click a bar with symbol, the corresponding symbol will be removed.
 - **Setting**<br/>
   - __*Interval*__: choose between the default region and the custom region. If no bed file is provided, the only option is the default whole genome region.
-<<<<<<< HEAD
-  - __*Y axis*__: provided three measurement of the mutation count, namely the numeric sum of the mutation, mutations per Mb and the percentage among all mutations.
-=======
   - __*Y axis*__: provide three measurements of the mutation count, namely the numeric sum of the mutation, mutations per Mb and the percentage among all mutations.
->>>>>>> fix three added manuals

@@ -6,7 +6,12 @@ The uploaded **CSV** file must match the *required* format as specified below.<b
 Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/CNV_Single_Sample/demo_data/single_sample_data.csv). User can directly use the output from the 'Patchwork' tool as our input file.
 
 # Display Interactions
-We provide *Tooltips* for this visualization. When the mouse moves to a circle in the top plot, corresponding information like `np`, `mean`, `snvs` and `fullCN` are shown on the tooltip.
+There are three types of interactions: *Tooltips* and *Download*.
+
+- **Tooltips**<br/>
+When the mouse moves to a circle in the top plot, corresponding information like `np`, `mean`, `snvs` and `fullCN` are shown on the tooltip.
+- **Download**<br/>
+  One SVG file will be generated when the '**Download**' button is clicked. Only the default **Dark Theme** is available at this point.
 
 # Sidebar Functions
 The sidebar provides diverse options to manage files and select a chromosome.
