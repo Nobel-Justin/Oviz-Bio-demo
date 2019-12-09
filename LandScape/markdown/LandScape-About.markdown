@@ -1,5 +1,5 @@
 # Version
-v1.0.8 (2019-12-04)
+v1.0.9 (2019-12-09)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
@@ -8,6 +8,15 @@ Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
 Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEAAAAJ), [ORCID](https://orcid.org/0000-0002-7136-9919), [GitHub](https://github.com/Nobel-Justin))
 
 ## Updates
+
+### v1.0.9
+   - refine name setting of histogram-panel.
+   - refine legend and name displays of histogram-panel.
+   - refine options of histogram-panel in sidebar.
+   - fix 'Bisection' tag dragging in 'Reorder samples'.
+   - refine legend of the left-side histogram of gene-panel.
+   - fix hiding of the last histogram-panel.
+   - add notes on demo files when no input is uploaded.
 
 ### v1.0.8
    - enable mutation types gourp in left histogram of gene-panel.
@@ -18,7 +27,7 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
    - optimize rows highlighting.
    - optimize displays of the GO ontology.
    - enable checking range rationality of gradient colors.
-   - restore the histogram options in 'Reorder samples'.
+   - fix the histogram options in 'Reorder samples'.
 
 ### v1.0.6
    - unify the display of 'N/A'.
