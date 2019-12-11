@@ -1,9 +1,13 @@
+##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/LandScape/demo_csv/landscape_demo.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/demo_csv/landscape_demo.csv) the `official demo input`.
+
+Additional demo files from the **[References](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/markdown/LandScape-References.markdown)** are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/LandScape/demo_csv) project.
+
 # Introduction
 The 'LandScape' visualization is frequently utilized to provide a systematic illustration of integrative data from multiple layers of batch samples, which are always compared to each other on certain attributes, such as genes and biological pathways mutated in cancers. This online 'LandScape' visualization is designed as a fixed part (histogram and gene-panels) with additional panels (e.g., age, gender, and histology). To visualize data, upload a **CSV** file in the *required* format and use sidebar options to customize the display.
 
 # LandScape Data (CSV file)
+
 The uploaded **CSV** file must match the *required* format as specified below.<br/>
-Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/demo_csv/landscape_demo.csv). Additional demo files from the **[References](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/markdown/LandScape-References.markdown)** are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/LandScape/demo_csv) project.
 
 - **header**<br/>
   The first line of the file should be a header that contains column names as keys.
@@ -63,7 +67,7 @@ There are four types of interactions: *Highlights*, *Tooltips*, *External Link* 
   One SVG file will be generated when the '**Download**' button is clicked. Two themes are supplied: the default theme with a dark background and the light theme with white background. To use the light theme, please click the '**Light Theme**' button.
 
 # Sidebar Functions
-The sidebar provides diverse options to fine-tune the display, such as managing files, resetting size and color, grouping and reordering objects, and so on.
+The sidebar provides diverse options to fine-tune the display, such as manage files, reset size and color, group and reorder objects, and so on.
 
 - **Files**
   - __*Manage Files*__: checklist of CSV files uploaded previously, delete or download the CSV files.
@@ -89,4 +93,4 @@ The sidebar provides diverse options to fine-tune the display, such as managing 
      - for *numeric value* attribute, reset gradient colors and value ranges, OR, enable groups displaying with customized value ranges.
   - __*Reorder*__: reorder attributes in this additional panel.
 
-*Manual version=1.1*, written by Dr. JIA Wenlong and Mr. LI Hechen on 2019-12-02.
+*Manual version=1.2*, written by Dr. JIA Wenlong and Mr. LI Hechen on 2019-12-11.
