@@ -1,3 +1,5 @@
+##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Signature/demo_data/signature.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Signature/demo_data/signature.csv) the `official demo input`.
+
 # Introduction
 The 'Signature' visualization is wildly used in mutational signature analysis. It shows the signature profile with the conventional 96 mutation type classification. The classification first divides mutations into six substitution subtypes, namely C>A, C>G, C>T, T>A, T>C, and T>G. Subsequently, taking the information from the 5' to 3' adjacent bases leads to said 96 possible mutation types. Moreover, we compare each signature with all recorded signature references in the [COSMIC database](https://cancer.sanger.ac.uk/cosmic/signatures/SBS/) by the cosine similarity test. The top three similar signature references are listed with their percentage of similarity. In particular, possible sequencing artifacts in the signature references are shown in pink while others in blue.
 

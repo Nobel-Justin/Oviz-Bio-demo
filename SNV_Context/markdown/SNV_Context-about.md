@@ -1,5 +1,5 @@
 # Version
-v1.0.0 (2019-12-01)
+v1.0.0 (2019-12-16)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))<br/>
