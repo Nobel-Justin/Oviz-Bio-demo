@@ -1,3 +1,7 @@
+##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SV_Heatmap/demo_data/10x.txt) and [Check](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SV_Heatmap/demo_data/10x.txt) the `official demo input`.
+
+Additional demo files are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/SV_Heatmap/demo_data) project.
+
 # Introduction
 Linkage heatmap is an useful method to visualize read linkage patterns on SV event, especially in studies with long-range sequencing data, such as 10x linked-reads and HiC data [1,2,3]. We apply the 'SV: Heatmap' visualization to display the heatmap matrix based on sequencing reads linkage between two local windowlized regions of SV case. The color depth of each cross-linked window pair is proportional to the number of linkages. Along the chromosome coordinate axis of the heatmap matrix, annotation information is added, such as Ensembl genes. To visualize data, upload a **TXT** file in the *required* format, and then use sidebar options to adjust heatmap color scheme and choose other SVs to display if uploaded data contains multiple cases.
 
