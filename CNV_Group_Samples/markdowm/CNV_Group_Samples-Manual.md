@@ -1,4 +1,4 @@
-##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/CNV_Group_Samples/demo_data/all_files.zip) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/SNV_Context/demo_data) the `official demo input`.
+##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/CNV_Group_Samples/demo_data/CNV_Group_Samples_demo.zip) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/SNV_Context/demo_data.zip) the `official demo inputs`.
 
 # Introduction
 The 'Group Samples' visualization is an interactive and extended version of the output plot from 'GISTIC', a bioinformatics tool for identifying regions of the genome that are significantly amplified or deleted across a set of samples. In this visualization, each aberration is assigned a G-score that considers the amplitude of the aberration as well as the frequency of its occurrence across samples. The G-scores are the drawn as the red (amplification) and blue (deletion) lines on the plot. False Discovery Rate q-values are then calculated for the aberrant regions and regions with q-values below a user-defined threshold (shown as the two green lines) are considered significant. The “wide peak”, determined using a leave-one-out algorithm to allow for errors in the boundaries in a single sample, are shown by the text tags extending from the line plot. The “wide peak” boundaries are more robust for identifying the most likely gene targets in the region. We also lists genes found in each “wide peak” region in a gene box. To visualize data, upload three **TSV** files in the *required* format and use sidebar options to customize the display.
@@ -7,7 +7,7 @@ The 'Group Samples' visualization is an interactive and extended version of the 
 The uploaded **TSV** files must match the *required* format as specified below.
 
 ## Scores
-Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/CNV_Group_Samples/demo_data/Group_Sample_scores.tsv). User can directly use the score output from the 'GISTIC' tool as our input file.
+Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/CNV_Group_Samples/demo_data/CNV_Group_Samples_demo_scores.tsv). User can directly use the score output from the 'GISTIC' tool as our input file.
 
 - **header**<br/>
   The first row contains eight column headings, which must be identical to those listed in the following:
@@ -21,11 +21,11 @@ Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-de
   - __*frequency*__: Frequency of aberration across the genome for both amplifications and deletions.
 
 ## amp\_genes.conf\_90
-Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/CNV_Group_Samples/demo_data/Group_Sample_amp_genes.conf_90.tsv). User can directly use the amp\_genes.conf\_90 output from the 'GISTIC' tool as our input file.
+Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/CNV_Group_Samples/demo_data/CNV_Group_Samples_demo_amp_genes.conf_90.tsv). User can directly use the amp\_genes.conf\_90 output from the 'GISTIC' tool as our input file.
 The amp genes file contains amplification peaks identified in the GISTIC analysis. The first four rows are cytoband, q-value, residual q-value and wide peak boundaries. These rows identify the lesion in the same way as the all lesions file. The remaining rows list the genes contained in each wide peak. For peaks that contain no genes, the nearest gene is listed in brackets.
 
 ## del\_genes.conf\_90
-Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/CNV_Group_Samples/demo_data/Group_Sample_del_genes.conf_90.tsv). User can directly use the del\_genes.conf\_90 output from the 'GISTIC' tool as our input file. The del genes file contains one column for each deletion peak identified in the GISTIC analysis. The file format for the del genes file is identical to the format for the amp genes file.
+Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/CNV_Group_Samples/demo_data/CNV_Group_Samples_demo_del_genes.conf_90.tsv). User can directly use the del\_genes.conf\_90 output from the 'GISTIC' tool as our input file. The del genes file contains one column for each deletion peak identified in the GISTIC analysis. The file format for the del genes file is identical to the format for the amp genes file.
 
 # Display Interactions
 There are four types of interactions: *External Link* and *Download*.

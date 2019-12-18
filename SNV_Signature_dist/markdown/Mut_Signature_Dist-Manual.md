@@ -1,11 +1,11 @@
-##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Signature_dist/demo_data/sig_dist.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Signature_dist/demo_data/sig_dist.csv) the `official demo input`.
+##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Signature_dist/demo_data/SNV_Signature_dist_demo.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Signature_dist/demo_data/SNV_Signature_dist_demo.csv) the `official demo input`.
 
 # Introduction
 The 'Signature Dist' visualization shows the fraction of signatures within individual samples. It can also be used to show the fraction of signatures within several cancer types.
 
 # Signature Dist Data (CSV file)
 The uploaded **CSV** file must match the *required* format as specified below.<br/>
-Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Signature_dist/demo_data/sig_dist.csv).
+Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Signature_dist/demo_data/SNV_Signature_dist_demo.csv).
 
 - **header**<br/>
   The first line of the file should be a header that contains column names as keys. The header should follow the following format:
