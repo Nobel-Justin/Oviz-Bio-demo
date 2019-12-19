@@ -63,3 +63,4 @@ The sidebar provides diverse options to fine-tune the display, namely managing f
 - **Setting**<br/>
   - __*Interval*__: choose between the default region and the custom region. If no bed file is provided, the only option is the default whole genome region.
   - __*Y axis*__: provide three measurements of the mutation count, namely the numeric sum of the mutation, mutations per Mb and the percentage among all mutations.
+  - __*Filter by tumor\_f*__: choose the compare method and the threshold for filtering mutations.
