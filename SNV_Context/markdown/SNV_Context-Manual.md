@@ -4,9 +4,9 @@
 # Introduction
 The 'Context' visualization, otherwise known as the 'Lego plot' of mutational frequencies, describes the distribution of mutations across batch samples on a given region. Base substitutions are divided into six types to represent the six possible base changes (each type represented by a different color as shown in the “Mutation Type” legend). Substitutions in each type are further subdivided by the 16 possible flanking nucleotides surrounding the mutated base as listed in “Trinucleotide Context” table. The pie chart illustrates the percentage of all mutations types on said batch samples. To visualize data, upload a **BGZ** file in the *required* format and use sidebar options to customize the display.
 
-# Context Data (BGZ file)
+# Input Files
 
-## Batch Sample
+## SNV tsv.bgz File
 The uploaded **BGZ** file must match the *required* format as specified below.<br/>
 Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv.bgz).
 
