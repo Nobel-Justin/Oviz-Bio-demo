@@ -1,4 +1,4 @@
-##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SV_Heatmap/demo_data/10x.txt) and [Check](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SV_Heatmap/demo_data/10x.txt) the `official demo input`.
+##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SV_Heatmap/demo_data/10x.txt) the `official demo input`.
 
 Additional demo files are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/SV_Heatmap/demo_data) project.
 

@@ -38,3 +38,5 @@ The sidebar provides options to manage files.
   - __*Upload*__: upload Signature CSV file. Note that the duplicated file name will be alerted and given a random postfix.
   - __*Choose*__: choose files uploaded previously. Note that this function is ONLY available to registered users (each account has certain storage).
   - __*File Sets*__: NOT available to this page.
+
+*Manual version=1.0*, written by Miss. Li Shiying on 2019-12-19.

@@ -25,3 +25,5 @@ The sidebar provides diverse options to manage files and select a chromosome.
   - __*File Sets*__: NOT available to this page.
 - **Chromosome**</br>
   A selection box is provided to choose between all 24 chromosomes.
+
+*Manual version=1.0*, written by Miss. Li Shiying on 2019-12-19.
