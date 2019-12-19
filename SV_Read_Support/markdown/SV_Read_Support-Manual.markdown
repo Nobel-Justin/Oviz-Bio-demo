@@ -13,6 +13,7 @@ User can generate the `junc.reads.txt` files using `read_support.py` in https://
 
 The demo output file `demo_data/simu.junc.reads.txt` stores supporting split reads for given SV. It starts with "sv" section.
 
+
 | chrom_5p |  bkpos_5p | chrom_3p |  bkpos_3p |  inner_ins | splits_read_num |
 |---|---|---|---|---|---|
 | chr11  | 100000  | chr1 | 101000  | Inner-Ins:TACCGATAT  |10 | 
