@@ -12,12 +12,12 @@ Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-de
 - **header**<br/>
   The first row contains eight column headings, which must be identical to those listed in the following:
   - __*Type*__: Aberration type, which is specified as Amp or Del (amplification or deletion).
-  - __*Chromosome(hg17)*__: Chromosome.
+  - __*chromosome*__: Chromosome.
   - __*Start*__: Location of the first base pair in the aberrant region.
   - __*End*__: Location of the last base pair in the aberrant region.
   - __*q-value*__: False Discovery Rate q-values for the aberrant regions (q-values below a user-defined threshold are considered significant).
-  - __*score*__: G-score that considers the amplitude of the aberration as well as the frequency of its occurrence across samples.
-  - __*amplitude*__: Average amplitudes among aberrant samples.
+  - __*G-score*__: G-score that considers the amplitude of the aberration as well as the frequency of its occurrence across samples.
+  - __*average amplitude*__: Average amplitudes among aberrant samples.
   - __*frequency*__: Frequency of aberration across the genome for both amplifications and deletions.
 
 ## amp\_genes.conf\_90

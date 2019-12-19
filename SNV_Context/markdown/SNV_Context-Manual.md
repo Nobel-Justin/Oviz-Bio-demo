@@ -1,4 +1,5 @@
 ##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv.bgz) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv.bgz) the `official demo input`.
+##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Context/demo_data/SNV_Context_demo_Region.bed) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_Region.bed) the `official demo input` for the optional bed file.
 
 # Introduction
 The 'Context' visualization, otherwise known as the 'Lego plot' of mutational frequencies, describes the distribution of mutations across batch samples on a given region. Base substitutions are divided into six types to represent the six possible base changes (each type represented by a different color as shown in the “Mutation Type” legend). Substitutions in each type are further subdivided by the 16 possible flanking nucleotides surrounding the mutated base as listed in “Trinucleotide Context” table. The pie chart illustrates the percentage of all mutations types on said batch samples. To visualize data, upload a **BGZ** file in the *required* format and use sidebar options to customize the display.
@@ -10,10 +11,12 @@ The uploaded **BGZ** file must match the *required* format as specified below.<b
 Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv.bgz).
 
 - **header**<br/>
-  The file can be converted from a TSV file with the following format: 
-  | #contig |  position |  context | ref_allele |  alt_allele | tumor_f |
-  |---|---|---|---|---|---|
-  | chr1  | 101686  | AxA | A | G | 0.113636 |
+  The file can be converted from a TSV file with the following format:
+
+| #contig |  position |  context | ref_allele |  alt_allele | tumor_f |
+|---|---|---|---|---|---|
+| chr1  | 101686  | AxA | A | G | 0.113636 |
+
   - `#contig` and `position` respectively stand for the chromosome and position of the mutation.
   - `context` stands for the trinucleotide context of the mutation.
   - `ref_allele` and `alt_allele` respectively stand for the base before and after the mutation.
@@ -25,16 +28,17 @@ Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-de
 
 ## Custom Bed File (optional)
 
-A custom bed file allows user to replace the default region used in our website, which is the whole genome sequence. We will filter out mutations that are not in the custom region during the calculation.
+A custom bed file allows user to replace the default region used in our website, which is the whole genome sequence. We will filter out mutations that are not in the custom region during the calculation. Note that the uploaded bed file is only applied when you **choose the custom bed option** in the **Settings** section of the sidebar. 
 
-The uploaded **TSV** file must match the *required* format as specified below.<br/>
-Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_Region-1.bed) and [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_Region-2.bed).
+The uploaded **TSV** file must match the *required* format as specified below.
+Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_Region.bed).
 
 - **header**<br/>
   The header should follow the following format:
-  | #chr |  startPos |  endPos |
-  |---|---|---|
-  | chr1  | 11174854  | 11175054 |
+
+| #chr |  startPos |  endPos |
+|---|---|---|
+| chr1  | 11174854  | 11175054 |
 
 # Display Interactions
 There are three types of interactions: *Tooltips*, *Transparent Bins* and *Download*.
