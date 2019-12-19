@@ -3,7 +3,7 @@
 Additional demo files are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/SV_Read_Support/demo_data) project.
 
 # Introduction
-We implement the "SV: Reads Support" to display how sequencing reads support the connection of two segments in SV cases. Concatenated SV junction sequence is horizontally shown in the middle of page with two types of split supporting reads aligning to it base by base. Genes and transcripts that locate in the 5-prime and 3-prime SV segments are shown at the page top and bottom respectively. Area of supporting reads supports zooming in to check the details, such as base quality and alignment mismatch. This visualization greatly helps users determine the credibility of SV cases.
+We implement the "SV: Reads Support" to display how sequencing reads support the connection of two segments in SV cases[1]. Concatenated SV junction sequence is horizontally shown in the middle of page with two types of split supporting reads aligning to it base by base. Genes and transcripts that locate in the 5-prime and 3-prime SV segments are shown at the page top and bottom respectively. Area of supporting reads supports zooming in to check the details, such as base quality and alignment mismatch. This visualization greatly helps users determine the credibility of SV cases.
 To visualize data, upload a **TXT** file in the *required* format, and then use sidebar options to adjust SV event and read to display.
 
 # SV:Read Support Data (TXT file)
@@ -12,6 +12,7 @@ The uploaded **TXT** file must match the *required* format. Several demo files f
 User can generate the `junc.reads.txt` files using `read_support.py` in https://github.com/paprikachan/ComplexSV.
 
 The demo output file `demo_data/simu.junc.reads.txt` stores supporting split reads for given SV. It starts with "sv" section.
+
 
 | chrom_5p |  bkpos_5p | chrom_3p |  bkpos_3p |  inner_ins | splits_read_num |
 |---|---|---|---|---|---|
