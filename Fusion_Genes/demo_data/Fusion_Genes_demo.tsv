@@ -1,0 +1,4 @@
+#Sample-ID	up_gene	up_chr	up_pos	up_covlen	down_gene	down_chr	down_pos	down_covlen
+T003	FGFR3	chr4	1808661	886	TACC3	chr4	1739325	704
+T010	PARG	chr10	51093249	165	BMS1	chr10	43287075	179
+T013	PARD6G	chr18	77960593	285	CASC8	chr8	128302305	242

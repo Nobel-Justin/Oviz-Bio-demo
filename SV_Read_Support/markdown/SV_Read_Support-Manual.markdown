@@ -1,13 +1,11 @@
 ##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SV_Read_Support/demo_data/demo.junc.reads.txt) and [Check](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SV_Read_Support/demo_data/demo.junc.reads.txt) the `official demo input`.
 
-Additional demo files are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/SV_Read_Support/demo_data) project.
-
 # Introduction
 We implement the "SV: Reads Support" to display how sequencing reads support the connection of two segments in SV cases[1]. Concatenated SV junction sequence is horizontally shown in the middle of page with two types of split supporting reads aligning to it base by base. Genes and transcripts that locate in the 5-prime and 3-prime SV segments are shown at the page top and bottom respectively. Area of supporting reads supports zooming in to check the details, such as base quality and alignment mismatch. This visualization greatly helps users determine the credibility of SV cases.
 To visualize data, upload a **TXT** file in the *required* format, and then use sidebar options to adjust SV event and read to display.
 
 # SV:Read Support Data (TXT file)
-The uploaded **TXT** file must match the *required* format. Several demo files from **References** are provided in <a href="https://github.com/Nobel-Justin/BTDraw/tree/master/SV_Read_Support/demo_data" target="_blank">BTDraw</a> GitHub project.
+The uploaded **TXT** file must match the *required* format.
 
 User can generate the `junc.reads.txt` files using `read_support.py` in https://github.com/paprikachan/ComplexSV.
 
@@ -71,4 +69,4 @@ The sidebar provides diverse options to fine-tune the display, such as manage fi
   + __*Display*__: select the SV event and maximum reads number to show.
   + __*Reads*__: choose the read to display.
 
-*Manual version=1.0*, written by Miss. CHEN Lingxi on 2019-11-28.
+*Manual version=1.1*, written by Miss. CHEN Lingxi and Dr. JIA Wenlong on 2019-12-19.

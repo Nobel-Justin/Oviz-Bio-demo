@@ -6,7 +6,7 @@ Additional demo files are provided in the [GitHub](https://github.com/Nobel-Just
 Linkage heatmap is an useful method to visualize read linkage patterns on SV event, especially in studies with long-range sequencing data, such as 10x linked-reads and HiC data [1,2,3]. We apply the 'SV: Heatmap' visualization to display the heatmap matrix based on sequencing reads linkage between two local windowlized regions of SV case. The color depth of each cross-linked window pair is proportional to the number of linkages. Along the chromosome coordinate axis of the heatmap matrix, annotation information is added, such as Ensembl genes. To visualize data, upload a **TXT** file in the *required* format, and then use sidebar options to adjust heatmap color scheme and choose other SVs to display if uploaded data contains multiple cases.
 
 # SV:Heatmap Data (TXT file)
-The uploaded **TXT** file must match the *required* format. Several demo files from **References** are provided in <a href="https://github.com/Nobel-Justin/BTDraw/tree/master/SV_Heatmap/demo_data" target="_blank">BTDraw</a> GitHub project.
+The uploaded **TXT** file must match the *required* format. Several demo files from **References** are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/SV_Heatmap/demo_data) project.
 
 User can generate the heatmap.txt files using `linkage_heatmap.py` in https://github.com/paprikachan/ComplexSV.
 
