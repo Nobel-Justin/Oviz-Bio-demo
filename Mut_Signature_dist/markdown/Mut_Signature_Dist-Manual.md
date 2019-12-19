@@ -9,9 +9,11 @@ Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-de
 
 - **header**<br/>
   The first line of the file should be a header that contains column names as keys. The header should follow the following format:
-  | Observations |  T38_Stomach | TCGA_BR_7197_01A_11D_2201_08_Stomach | TCGA_D7_5578_01A_01D_1600_08_Stomach |
-  |---|---|---|---|
-  | processes1  | 5.363950322  | 21.10195793 | 13.46599926 |
+
+| Observations |  T38_Stomach | TCGA_BR_7197_01A_11D_2201_08_Stomach | TCGA_D7_5578_01A_01D_1600_08_Stomach |
+|---|---|---|---|
+| processes1  | 5.363950322  | 21.10195793 | 13.46599926 |
+
   - `Observations` takes the values of the names of signatures.
   - keys like `T38_Stomach` is the name of an individual sample. The number of keys is not limited.
 

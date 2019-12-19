@@ -9,9 +9,11 @@ Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-de
 
 - **header**<br/>
   The first line of the file should be a header that contains column names as keys. The header should follow the following format:
-  | types |  subtypes | processes1 | processes2 |  processes3 | processes4 | processes5 |
-  |---|---|---|---|---|---|---|
-  | C>A  | ACA  | 0.000353018 | 0.000284683 | 0.000401966 | 0.002938016 | 0.002984077 |
+
+| types |  subtypes | processes1 | processes2 |  processes3 | processes4 | processes5 |
+|---|---|---|---|---|---|---|
+| C>A  | ACA  | 0.000353018 | 0.000284683 | 0.000401966 | 0.002938016 | 0.002984077 |
+
   - `types` and `subtypes` respectively stand for the six substitution subtypes and the adjacent bases. The values of the two keys should also follows the format shown above.
   - `processes1` to `processes5` each stands for a signature. The name, such as `processes1`, is not fixed and can be replaced by any other text. The number of signatures is not limited.
 
