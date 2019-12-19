@@ -1,5 +1,5 @@
-##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv.bgz) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv.bgz) the `official demo input`.
-##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Context/demo_data/SNV_Context_demo_Region.bed) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_Region.bed) the `official demo input` for the optional bed file.
+##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv.bgz) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv.bgz) the `SNV TSV.bgz input` (required).
+##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Context/demo_data/SNV_Context_demo_Region.bed) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_Region.bed) the `Region BED input` (optional).
 
 # Introduction
 The 'Context' visualization, otherwise known as the 'Lego plot' of mutational frequencies, describes the distribution of mutations across batch samples on a given region. Base substitutions are divided into six types to represent the six possible base changes (each type represented by a different color as shown in the “Mutation Type” legend). Substitutions in each type are further subdivided by the 16 possible flanking nucleotides surrounding the mutated base as listed in “Trinucleotide Context” table. The pie chart illustrates the percentage of all mutations types on said batch samples. To visualize data, upload a **BGZ** file in the *required* format and use sidebar options to customize the display.
@@ -11,7 +11,7 @@ The uploaded **BGZ** file must match the *required* format as specified below.<b
 Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv.bgz).
 
 - **header**<br/>
-  The file can be converted from a TSV file with the following format:
+  The file can be sorted and compressed from a TSV file with the following format:
 
 | #contig |  position |  context | ref_allele |  alt_allele | tumor_f |
 |---|---|---|---|---|---|
@@ -22,8 +22,8 @@ Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-de
   - `ref_allele` and `alt_allele` respectively stand for the base before and after the mutation.
   - `tumor_f` is optional. We allow user to filter out mutations with `tumor_f` value lower than a custom threshold.
 
-  To convert the TSV file, for example [SNV_Context_demo_MutList.tsv.txt](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv.txt), run the following command in the terminal
-  <pre><code>(head -1 SNV_Context_demo_MutList.tsv.txt; sed -n '2,$p' SNV_Context_demo_MutList.tsv.txt | sort -k1,1 -k2n) | bgzip -c > SNV_Context_demo.tsv.bgz</code></pre>
+  To convert the TSV file, for example [tsv file](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv), run the following command in the terminal
+  <pre><code>(head -1 SNV_Context_demo_MutList.tsv; sed -n '2,$p' SNV_Context_demo_MutList.tsv | sort -k1,1 -k2n) | bgzip -c > SNV_Context_demo.tsv.bgz</code></pre>
   This command sorts the TSV file by chromosome and position for faster data processing.
 
 ## Custom Bed File (optional)
@@ -68,3 +68,5 @@ The sidebar provides diverse options to fine-tune the display, namely managing f
   - __*Interval*__: choose between the default region and the custom region. If no bed file is provided, the only option is the default whole genome region.
   - __*Y axis*__: provide three measurements of the mutation count, namely the numeric sum of the mutation, mutations per Mb and the percentage among all mutations.
   - __*Filter by tumor\_f*__: choose the compare method and the threshold for filtering mutations.
+
+*Manual version=1.1*, written by Miss. Li Shiying and Dr. JIA Wenlong on 2019-12-19.
