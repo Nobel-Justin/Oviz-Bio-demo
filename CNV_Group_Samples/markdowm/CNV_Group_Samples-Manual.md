@@ -43,7 +43,8 @@ The sidebar provides diverse options to fine-tune the display, like managing fil
   - __*Upload*__: upload the three files. Note that the duplicated file name will be alerted and given a random postfix.
   - __*Choose*__: choose files uploaded previously. Note that this function is ONLY available to registered users (each account has certain storage).
   - __*File Sets*__: save the three files together as a file set. User can also choose to apply one file set from all saved ones.
-- **Errors**
+- **Errors**<br/>
+  Error genes are the genes in the uploaded amp\_genes.conf\_90 or del\_genes.conf\_90 file but not founded in our database.
   - __*Error genes in Amp*__: list of error genes in application.
   - __*Error genes in Del*__: list of error genes in deletion.
 - **Setting**<br/>
