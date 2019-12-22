@@ -1,26 +1,35 @@
 # Oviz-Bio-demo
 
-Documents of <a href="https://bio.oviz.org/" target="_blank">Oviz-Bio</a>, a Platform for Bioinformatics Visualization
+Documents of [Oviz-Bio](https://bio.oviz.org/), a Platform for Bioinformatics Visualization
 
 # Intergrated
 
 ## LandScape
 The 'LandScape' visualization is frequently utilized to provide a systematic illustration of integrative data from multiple layers of batch samples, which are always compared to each other on certain attributes, such as genes and biological pathways mutated in cancers. To visualize data, a CSV file in the required format is needed.
-### demo_csv
+### demo_data
 Several demo CSV files are provided.
 - `landscape_demo.csv` is the official demo CSV file.
-- `PMIDxxx.Figx.landscape.csv` files to present LandScape instances in published papers (see <a href="https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/markdown/LandScape-References.markdown" target="_blank">Reference</a>).
+- `PMIDxxx.Figx.landscape.csv` files to present LandScape instances in published papers (see [Reference](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/markdown/LandScape-References.markdown)).
 ### markdown
 Markdown files of LandScape analysis page on Oviz-Bio Platform.
 - Manual
 - References
 - About
 
-## Circos
+<!-- ## Circos -->
 
 # Small Mutation
 
 ## Mut: On Genes
+The 'Mutations on Genes' displays SNVs and InDels with their coordinates and function annotations along the selected transcript of a given gene in three levels (genome, cDNA, and peptide).
+### demo_data
+Check the `Mutation CSV input` official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.mutations.csv).
+Check the `Depth BGZ input` official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.depth.bgz).
+### markdown
+Markdown files of 'Mut: On Genes' page on Oviz-Bio Platform.
+- Manual
+- References
+- About
 
 ## SNV: Context
 The 'Context' visualization, otherwise known as the 'Lego plot' of mutational frequencies, describes the distribution of mutations across batch samples on a given region. To visualize data, To visualize data, a BGZ file in the required format is needed.
@@ -106,4 +115,24 @@ Markdown files of SV:Reads Support analysis page on Oviz-Bio Platform.
 
 # Gene Fusion
 
+## Fusion Genes
+the `Fusion Genes` visualization displays the whole structure of chimeric transcript structure.
+### demo_data
+Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Fusion_Genes/demo_data/Fusion_Genes_demo.tsv).
+### markdown
+Markdown files of 'Fusion Genes' page on Oviz-Bio Platform.
+- Manual
+- References
+- About
+
 # Onco Virus
+
+## Virus: Integ HotSpot
+the `Virus: Integ HotSpot` visualization displays the oncovirus integrated hotspot of group samples in a genome browser way.
+### demo_data
+Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Virus_IntegHotSpot/demo_data/Virus_IntegHotSpot_demo.csv).
+### markdown
+Markdown files of `Virus: Integ HotSpot` page on Oviz-Bio Platform.
+- Manual
+- References
+- About

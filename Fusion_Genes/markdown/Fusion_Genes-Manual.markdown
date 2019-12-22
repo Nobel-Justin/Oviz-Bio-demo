@@ -1,7 +1,7 @@
 ##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/Fusion_Genes/demo_data/Fusion_Genes_demo.tsv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Fusion_Genes/demo_data/Fusion_Genes_demo.tsv) the `offical demo input`.
 
 # Introduction
-Fusion gene is a chimeric transcript consists of gene bodies from two or more previously separate genes. Many fusion genes have been found to contribute tumorigenesis of multiple cancer types. We implement the `Fusion Genes' visualization to show the whole structure of chimeric transcript structure.
+Fusion gene is a chimeric transcript consists of gene bodies from two or more previously separate genes. Many fusion genes have been found to contribute tumorigenesis of multiple cancer types. We implement the `Fusion Genes` visualization to show the whole structure of chimeric transcript structure.
 
 # Input Files
 
