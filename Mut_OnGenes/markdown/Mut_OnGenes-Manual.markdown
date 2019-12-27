@@ -1,5 +1,5 @@
 ##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.mutations.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.mutations.csv) the `Mutation CSV input`.
-##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.depth.bgz) the `Depth BGZ input`.
+##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.depth.tsv.bgz) the `Depth BGZ input`.
 
 # Introduction
 The 'Mutations on Genes' displays SNVs and InDels with their coordinates and function annotations along the selected transcript of a given gene. Mutation information can be viewed in three levels (genome, cDNA, and peptide). Different icons are applied to mutations according to their types and function changes, such as synonymous and missense SNV, frame-shift InDels. Interactive tooltip gives more information, including mutation coordinates, function area and details of exons. Sidebar offers options to adjust displays, such as changing resolution, and selecting mutation. This visualization is commonly utilized to show the mutation landscape of given genes in a group of cancer samples.
@@ -21,7 +21,7 @@ The uploaded **CSV** file must match the *required* format as specified below.
 ## Depth tsv.BGZ File
 
 Please upload a **tsv.bgz** compressed file to supply the depth distribution of the gene region.<br/>
-Download the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.depth.bgz). <br/>
+Download the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.depth.tsv.bgz). <br/>
 The uploaded file must match the *required* format as specified below.
 
 - **header**<br/>
@@ -30,6 +30,14 @@ The uploaded file must match the *required* format as specified below.
 | #chr |  pos |  depth |
 |---|---|---|
 | chr1  | 10182642  | 100 |
+
+- `#` prefix is mandatory to indicate the header line.
+- `chr` and `pos` respectively stand for the chromosome and position of the mutation.
+- `depth` is the sequencing depth at this genomic position.
+
+  The TSV file must be `sorted` by chromosome and position, and compressed by `bgzip` tools for `tabix` indexing to support fast data processing at the backend of Oviz-Bio.<br/>
+  For example, run the following command in the linux terminal (bgzip installed):
+  <pre><code>(head -1 Mut\_OnGenes\_demo.depth.tsv; sed -n '2,$p' Mut\_OnGenes\_demo.depth.tsv | sort -k1,1 -k2n) | bgzip -c > Mut\_OnGenes\_demo.depth.tsv.bgz</code></pre>
 
 # Display Interactions
 
@@ -67,4 +75,4 @@ The uploaded file must match the *required* format as specified below.
   - reset the Intron:Exon displaying resolution scale in DNA level.
   - reset the UTR:CDS displaying resolution scale in cDNA level.
 
-*Manual version=1.0*, written by Dr. JIA Wenlong on 2019-12-19.
+*Manual version=1.1*, written by Dr. JIA Wenlong on 2019-12-27.

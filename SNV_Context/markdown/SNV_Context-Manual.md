@@ -17,14 +17,15 @@ Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-de
 |---|---|---|---|---|---|
 | chr1  | 101686  | AxA | A | G | 0.113636 |
 
-  - `#contig` and `position` respectively stand for the chromosome and position of the mutation.
-  - `context` stands for the trinucleotide context of the mutation.
-  - `ref_allele` and `alt_allele` respectively stand for the base before and after the mutation.
-  - `tumor_f` is optional. We allow user to filter out mutations with `tumor_f` value lower than a custom threshold.
+- `#` prefix is mandatory to indicate the header line.
+- `contig` and `position` respectively stand for the chromosome and position of the mutation.
+- `context` stands for the trinucleotide context of the mutation.
+- `ref_allele` and `alt_allele` respectively stand for the base before and after the mutation.
+- `tumor_f` is optional. We allow user to filter out mutations with `tumor_f` value lower than a custom threshold.
 
-  To convert the TSV file, for example [tsv file](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv), run the following command in the terminal
-  <pre><code>(head -1 SNV_Context_demo_MutList.tsv; sed -n '2,$p' SNV_Context_demo_MutList.tsv | sort -k1,1 -k2n) | bgzip -c > SNV_Context_demo.tsv.bgz</code></pre>
-  This command sorts the TSV file by chromosome and position for faster data processing.
+  The TSV file must be `sorted` by chromosome and position, and compressed by `bgzip` tools for `tabix` indexing to support fast data processing at the backend of Oviz-Bio.<br/>
+  For example [tsv file](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv), run the following command in the linux terminal (bgzip installed):
+  <pre><code>(head -1 SNV\_Context\_demo\_MutList.tsv; sed -n '2,$p' SNV\_Context\_demo\_MutList.tsv | sort -k1,1 -k2n) | bgzip -c > SNV\_Context\_demo.tsv.bgz</code></pre>
 
 ## Custom Bed File (optional)
 
@@ -69,4 +70,4 @@ The sidebar provides diverse options to fine-tune the display, namely managing f
   - __*Y axis*__: provide three measurements of the mutation count, namely the numeric sum of the mutation, mutations per Mb and the percentage among all mutations.
   - __*Filter by tumor\_f*__: choose the compare method and the threshold for filtering mutations.
 
-*Manual version=1.1*, written by Miss. Li Shiying and Dr. JIA Wenlong on 2019-12-19.
+*Manual version=1.2*, written by Miss. Li Shiying and Dr. JIA Wenlong on 2019-12-27.
