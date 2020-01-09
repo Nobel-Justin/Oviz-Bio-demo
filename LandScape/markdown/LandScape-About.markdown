@@ -1,5 +1,5 @@
 # Version
-v1.0.9 (2019-12-09)
+v1.1.0 (2020-01-09)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
@@ -8,6 +8,9 @@ Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
 Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEAAAAJ), [ORCID](https://orcid.org/0000-0002-7136-9919), [GitHub](https://github.com/Nobel-Justin))
 
 ## Updates
+
+### v1.1.0
+   - refine group list when reorder in histogram panel.
 
 ### v1.0.9
    - refine name setting of histogram-panel.
