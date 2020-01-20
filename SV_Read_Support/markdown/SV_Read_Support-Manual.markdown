@@ -1,7 +1,7 @@
 ##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SV_Read_Support/demo_data/demo.junc.reads.txt) the `official demo input`.
 
 # Introduction
-We implement the "SV: Reads Support" to display how sequencing reads support the connection of two segments in SV cases[1]. Concatenated SV junction sequence is horizontally shown in the middle of page with two types of split supporting reads aligning to it base by base. Genes and transcripts that locate in the 5-prime and 3-prime SV segments are shown at the page top and bottom respectively. Area of supporting reads supports zooming in to check the details, such as base quality and alignment mismatch. This visualization greatly helps users determine the credibility of SV cases.
+We implement the "SV: Reads Support" to display how sequencing reads support the connection of two segments in SV cases[1]. Concatenated SV junction sequence is horizontally shown in the middle of page with two types of split supporting reads aligning to it base by base. Miscro-homology base pairs are highlighed with pink color. Read base pair quality are colored likt  `samtools tview`, for instance, `Blue:0-9 Green:10-19 Yellow:20-29 White:>=30`. Genes and transcripts that locate in the 5-prime and 3-prime SV segments are shown at the page top and bottom respectively. Area of supporting reads supports zooming in to check the details, such as base quality and alignment mismatch. This visualization greatly helps users determine the credibility of SV cases.
 To visualize data, upload a **TXT** file in the *required* format, and then use sidebar options to adjust SV event and read to display.
 
 # SV:Read Support Data (TXT file)
@@ -63,10 +63,11 @@ There are two types of interactions: *Tooltips* and *Download*.
 
 - **Tooltips**
   Tooltips will show necessary information of object that the mouse points to.
+  + __*Read*__: Current read and its paired read will be enhanced. Information to show: read id, read offset, wheather this read or its paired read is split read and reversed, attached barcode if applicable. If the read body is clicked, floating box contained above information will appear, users can select, copy, and paste the text they desire.
   + __*Gene Transcript*__: Transcript name, transcript start position, and transcript end position.
+  
 - **Download**
   One SVG file will be generated when the '**Download**' button is clicked. Two themes are supplied: the default theme with dark background and the light theme with white backgroud. To use the light theme, please click the '**Light Theme**' button.
-
 
 # Sidebar Functions
 The sidebar provides diverse options to fine-tune the display, such as manage files, reset color, select SV event, and so on.
@@ -78,5 +79,6 @@ The sidebar provides diverse options to fine-tune the display, such as manage fi
 - **Settings**
   + __*Display*__: select the SV event and maximum reads number to show.
   + __*Reads*__: choose the read to display.
+  + __*Transcript*__: choose the transcript to display.
 
 *Manual version=1.1*, written by Miss. CHEN Lingxi and Dr. JIA Wenlong on 2019-12-19.
