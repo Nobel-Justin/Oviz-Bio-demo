@@ -47,11 +47,11 @@ Then, it list all supporting split reads, from left to right the columns are ord
                   :
   split_read:     xxxxxxxxxxxxxxxxxxxxxxxxxxxx
                   ^
-  read_position: -6
+  read_position: -5
                      
   micro-homology:    TCA   
                      ^
-  HM position       -3
+  HM position       -2
   ```
   
 + `read_seq`, the read sequence;
