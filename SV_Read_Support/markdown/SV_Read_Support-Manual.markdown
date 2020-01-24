@@ -56,7 +56,7 @@ Then, it list all supporting split reads, from left to right the columns are ord
   
 + `read_seq`, the read sequence;
 + `read_qual`, the read sequence quality;
-+ `barcode`, the barcode attached to read if applicable.
++ `barcode`, the barcode attached to read if applicable, emtpy string `''` otherwise.
 
 # Display Interactions
 There are two types of interactions: *Tooltips* and *Download*.
