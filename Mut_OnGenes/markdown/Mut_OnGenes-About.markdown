@@ -1,5 +1,5 @@
 # Version
-v1.0.3 (2020-01-22)
+v1.0.4 (2020-01-29)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
@@ -8,6 +8,13 @@ Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
 Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEAAAAJ), [ORCID](https://orcid.org/0000-0002-7136-9919), [GitHub](https://github.com/Nobel-Justin))
 
 ## Updates
+
+### v1.0.4
+   - fix page refreshing when task finished.
+   - fix link of job name in task monitor.
+   - change 'Depth File' as optinal input.
+   - fix displaying of transcript without domains.
+   - allow to hide the depth spectrum.
 
 ### v1.0.3
    - task monitor for mutation annotation.

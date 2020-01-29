@@ -1,5 +1,5 @@
 ##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.mutations.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.mutations.csv) the `Mutation CSV input`.
-##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.depth.tsv.bgz) the `Depth BGZ input`.
+##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.depth.tsv.bgz) the `Depth BGZ input` (Optional).
 
 # Introduction
 The 'Mutations on Genes' displays SNVs and InDels with their coordinates and function annotations along the selected transcript of a given gene. Mutation information can be viewed in three levels (genome, cDNA, and peptide). Different icons are applied to mutations according to their types and function changes, such as synonymous and missense SNV, frame-shift InDels. Interactive tooltip gives more information, including mutation coordinates, function area and details of exons. Sidebar offers options to adjust displays, such as changing resolution, and selecting mutation. This visualization is commonly utilized to show the mutation landscape of given genes in a group of cancer samples.
@@ -9,6 +9,7 @@ The 'Mutations on Genes' displays SNVs and InDels with their coordinates and fun
 ## Mutation CSV File
 
 Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.mutations.csv).<br/>
+Note that backend annotation task will be activated once mutation csv file is uploaded. User could check the job status in task monitor at the bottom of analysis page.<br/>
 The uploaded **CSV** file must match the *required* format as specified below.
 
 - **header**<br/>
@@ -18,9 +19,9 @@ The uploaded **CSV** file must match the *required* format as specified below.
 |---|---|---|---|---|---|---|---|
 | TCGA-AK-3451 | SNP | chr3 | 10183646 | G | A | VHL |
 
-## Depth tsv.BGZ File
+## Depth tsv.BGZ File (Optional)
 
-Please upload a **tsv.bgz** compressed file to supply the depth distribution of the gene region.<br/>
+User could upload a **tsv.bgz** compressed file to supply the depth distribution of the gene region.<br/>
 Download the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.depth.tsv.bgz). <br/>
 The uploaded file must match the *required* format as specified below.
 
@@ -50,6 +51,9 @@ The uploaded file must match the *required* format as specified below.
   - __*mutation*__: mutation details, sample(s) involved.
 - **Level exchange**<br/>
   - the main display level can be changed via clicking the level name.
+- **Annotation**<br/>
+  - mutation are denoted by icons according to classification and function change type.
+  - domains are displayed on protein level of available transcript.
 - **Zoom in/out**<br/>
   the main display level can be zoomed in/out via mouse wheel.
 - **Pages**<br/>
@@ -74,5 +78,6 @@ The uploaded file must match the *required* format as specified below.
   - enbale or disable displaying of exon NO.
   - reset the Intron:Exon displaying resolution scale in DNA level.
   - reset the UTR:CDS displaying resolution scale in cDNA level.
+  - enbale or disable displaying depth spectrum.
 
-*Manual version=1.1*, written by Dr. JIA Wenlong on 2019-12-27.
+*Manual version=1.2*, written by Dr. JIA Wenlong on 2020-01-29.
