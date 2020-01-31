@@ -7,7 +7,7 @@ To visualize data, upload a **TXT** file in the *required* format, and then use 
 # SV:Read Support Data (TXT file)
 The uploaded **TXT** file must match the *required* format.
 
-User can generate the `junc.reads.txt` files using `read_support.py` in https://github.com/paprikachan/ComplexSV.
+User can generate the `junc.reads.txt` files using `read_support.py` with **BAM** file and [SvABA](https://github.com/walaj/svaba) generated sv **VCF** file. Please check https://github.com/paprikachan/ComplexSV for source code and usage of `read_support.py`.
 
 The demo output file `demo_data/simu.junc.reads.txt` stores supporting split reads for given SV. It starts with "sv" section,  the description of headers are listed below:
 
