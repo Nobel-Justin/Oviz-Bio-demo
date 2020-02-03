@@ -10,12 +10,12 @@ Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-de
 - **header**<br/>
   The first line of the file should be a header that contains column names as keys. The header should follow the following format:
 
-| types |  subtypes | processes1 | processes2 |  processes3 | processes4 | processes5 |
+| types |  subtypes | signature 1 | signature 2 |  signature 3 | signature 4 | signature 5 |
 |---|---|---|---|---|---|---|
 | C>A  | ACA  | 0.000353018 | 0.000284683 | 0.000401966 | 0.002938016 | 0.002984077 |
 
   - `types` and `subtypes` respectively stand for the six substitution subtypes and the adjacent bases. The values of the two keys should also follows the format shown above.
-  - `processes1` to `processes5` each stands for a signature. The name, such as `processes1`, is not fixed and can be replaced by any other text. The number of signatures is not limited.
+  - `signature 1` to `signature 5` each stands for a signature. The name, such as `signature 1`, is not fixed and can be replaced by any other text. The number of signatures is not limited.
 
 - **rows**<br/>
   Each row in the file is one of the 96 mutation types.
@@ -28,7 +28,7 @@ There are three types of interactions: *Highlights*, *External link* and *Downlo
 - **External link**<br/>
     Each reference label links to the [COSMIC SBS Signatures](https://cancer.sanger.ac.uk/cosmic/signatures/SBS/) search webpage.
 - **Download**<br/>
-  One SVG file will be generated when the '**Download**' button is clicked. Only the default **Dark Theme** is available at this point.
+  One SVG file will be generated when the '**Download**' button is clicked.
 
 # Sidebar Functions
 The sidebar provides options to manage files.
@@ -39,4 +39,4 @@ The sidebar provides options to manage files.
   - __*Choose*__: choose files uploaded previously. Note that this function is ONLY available to registered users (each account has certain storage).
   - __*File Sets*__: NOT available to this page.
 
-*Manual version=1.0*, written by Miss. Li Shiying on 2019-12-19.
+*Manual version=1.1*, written by Miss. LI Shiying and Dr. JIA Wenlong on 2020-02-03.
