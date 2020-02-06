@@ -20,7 +20,6 @@ The demo output file `demo_data/simu.junc.reads.txt` stores supporting split rea
 | `strand_3p` | `-` |  strand of 3' breakpoint |
 || `innser_ins:TACCGATAT` | `TACCGATAT` is the detected inner insertion at breakpoint, `NONE` if not available |
 | `meta_info` | `HM:TCA,-3` | `TCA` is the detected micro-homology at breakpoint, `-3` is the HM start position, the index convention is the same as `read_position` which will be introduced later |
-|| `BX:TTAAGGCCAAGAGTCG-1,TTAAGGCCAAGAGTCG-1` | `TTAAGGCCAAGAGTCG-1,TTAAGGCCAAGAGTCG-1` is the barcode associated with this SV event, `NONE` if not applicable |
 | `splits_read_num` | 10 | the number of supporting split read pairs |
 
 Then, it list all supporting split reads, from left to right the columns are ordered by:
