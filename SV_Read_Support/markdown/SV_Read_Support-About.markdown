@@ -1,5 +1,5 @@
 # Version
-v1.0.0 (2019-11-28)
+v1.0.1 (2020-02-06)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
@@ -9,6 +9,16 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
 Miss. Chen Lingxi ([GitHub](https://github.com/paprikachan))
 
 ## Updates
+
+### v1.0.1
+   - highlights of PE-reads.
+   - show tooltip and text frame of reads.
+   - fix reads displayings.
+   - refine Consensus Junction Sequence.
+   - show SV details at bottom left.
+   - sort PE-reads to display.
+   - show base quality.
+   - optimize inputs header.
 
 ### v1.0.0
    - initial functions implemented.
