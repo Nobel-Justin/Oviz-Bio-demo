@@ -5,20 +5,24 @@ The 'Signature Dist' visualization shows the fraction of signatures within indiv
 
 # Signature Dist Data (CSV file)
 The uploaded **CSV** file must match the *required* format as specified below.<br/>
+The input is mutation signature compositions in batch of samples using NMF algorithm, e.g., [decipherMutationalSignatures](https://github.com/lixiangchun/decipherMutationalSignatures).<br/>
 Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_Signature_dist/demo_data/Mut_Signature_dist_demo.csv).
 
 - **header**<br/>
   The first line of the file should be a header that contains column names as keys. The header should follow the following format:
 
-| Observations |  T38_Stomach | TCGA_BR_7197_01A_11D_2201_08_Stomach | TCGA_D7_5578_01A_01D_1600_08_Stomach |
-|---|---|---|---|
-| signature 1  | 5.363950322  | 21.10195793 | 13.46599926 |
+| Observations |  T01 | T02 | T03 | T04 | T05 | T06 | T07 |
+|---|---|---|---|---|---|---|---|
+| signature 1   | 5.364 | 21.102 | 13.466 | 3.781 | 17.510 | 10.632 | 25.913 |
+| signature 2   | ... | ... | ... | ... | ... | ... | ... |
+| signature ..  | ... | ... | ... | ... | ... | ... | ... |
+| signature N   | ... | ... | ... | ... | ... | ... | ... |
 
   - `Observations` takes the values of the names of signatures.
-  - keys like `T38_Stomach` is the name of an individual sample. The number of keys is not limited.
+  - keys like `T01` is the name of an individual sample. The number of keys is not limited.
 
 - **rows**<br/>
-  Each row in the file is the measure of a specified signature in each individual sample. Note that this measure does not have to be normalized.
+  Each row in the file is the measure of a specified signature in each individual sample. Note that this measure does not have to be normalized to 100%.
 
 # Display Interactions
 There are three types of interactions: *Highlights*, *Scrolling* and *Download*.
@@ -41,4 +45,4 @@ The sidebar provides options to manage files and reorder samples.
 - **Settings**<br/>
   In settings, user can reorder samples by ascending or descending order of the sample name or the fraction of a certain signature.
 
-*Manual version=1.0*, written by Miss. Li Shiying on 2019-12-19.
+*Manual version=1.1*, written by Miss. LI Shiying and Dr. JIA Wenlong on 2020-02-06.
