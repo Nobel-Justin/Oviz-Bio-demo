@@ -1,5 +1,5 @@
 # Version
-v1.0.1 (2019-12-20)
+v1.0.2 (2020-02-07)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))<br/>
@@ -9,6 +9,11 @@ Miss. LI Shiying ([GitHub](https://github.com/CherineLee))
 Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEAAAAJ), [ORCID](https://orcid.org/0000-0002-7136-9919), [GitHub](https://github.com/Nobel-Justin))
 
 ## Updates
+
+### v1.0.2
+   - refine filter option notes.
+   - center the vertical axis label.
+   - show percentages in the pie-chart.
 
 ### v1.0.1
    - fix 'Off' and 'Remove' bottom (Labels, Sidebar) being able to get chosen (highlighted) simultaneously.
