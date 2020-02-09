@@ -1,7 +1,7 @@
 ##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SV_Read_Support/demo_data/demo.junc.reads.txt) the `official demo input`.
 
 # Introduction
-For one given sv event, "SV: Read Support" exhibits all split reads across the breakpoints.  The top and bottom chromosome axis respectively represent the 5' and 3' breakpoint position, associated genes and transcripts annotation are also illustrated. The "consensus junction sequence" with white text in the black ground on the top is the concatenated SV junction sequence. All supporting split reads were aligned to the consensus junction sequence base by base. Users may zoom in to display the base pair of split reads in detail. Read base-pair quality are colored followed the scheme of `samtools tview`, for instance, `Blue:0-9 Green:10-19 Yellow:20-29 White:>=30`. All alignment mismatches are colored in red. Micro-homology base pairs are highlighted in pink. Users may upload the required input file, then utilize sidebar options to select the desired SV event and read to display.
+For one given sv event, "SV: Read Support" exhibits all split reads across the breakpoints.  The top and bottom chromosome axis respectively represent the 5' and 3' breakpoint position, associated genes and transcripts annotation are also illustrated. The "consensus junction sequence" with white text in the black ground on the top is the concatenated SV junction sequence. All supporting split reads were aligned to the consensus junction sequence base by base. Users may zoom in to display the base pair of split reads in detail. Read base-pair quality are colored followed the scheme of `samtools tview`, for instance, `Blue:0-9 Green:10-19 Yellow:20-29 White:>=30`. All alignment mismatches are colored in red. Small insertions were labelled with yellow “inverted triangle". Small deleteions were labelled with red '-'. Micro-homology base pairs are highlighted in pink. Users may upload the required input file, then utilize sidebar options to select the desired SV event and read to display.
 
 # SV:Read Support Data (TXT file)
 The uploaded **TXT** file must match the *required* format.
@@ -19,7 +19,7 @@ The demo output file `demo_data/simu.junc.reads.txt` stores supporting split rea
 | `bkpos_3p` | `101000` | position of  3' breakpoint |
 | `strand_3p` | `-` |  strand of 3' breakpoint |
 || `innser_ins:TACCGATAT` | `TACCGATAT` is the detected inner insertion at breakpoint, `NONE` if not available |
-| `meta_info` | `HM:TCA,-3` | `TCA` is the detected micro-homology at breakpoint, `-3` is the HM start position, the index convention is the same as `read_position` which will be introduced later |
+| `sv_meta_info` | `HM:TCA,-3` | `TCA` is the detected micro-homology at breakpoint, `-3` is the HM start position, the index convention is the same as `read_position` which will be introduced later |
 | `splits_read_num` | 10 | the number of supporting split read pairs |
 
 Then, it list all supporting split reads, from left to right the columns are ordered by:
@@ -54,7 +54,11 @@ Then, it list all supporting split reads, from left to right the columns are ord
   
 + `read_seq`, the read sequence;
 + `read_qual`, the read sequence quality;
-+ `barcode`, the barcode attached to read if applicable, emtpy string `''` otherwise.
++ `read_meta_info`, stores all read meta information, e.g. `BX:NONE;INS:-12(3),15(2);DEL:-86(1),36(4)`.
+  - `BX:GACACTAGTTAAGATG-1` is the barcode associated with the read.
+  - `INS:-12(3),15(2)` shows the small insertions on reads. `-12(3)` means that the first base of the insertion has 3 base pairs and its index is -12, and `15(2)` means that the first base of the second insertion has 2 base pairs and locates at index 15.  Note that the insertion sequence will not be displayed on reads, but marked with a yellow “inverted triangle” at the insertion position.
+  - `DEL:-86(1),36(4)` shows the small deletaion on reads. `36(4)` means that the front base of the deleted fragment is index 36, and the length of the deleted fragment is 4 bases. The deletion sequence is filled with red '-' on reads.
+
 
 # Display Interactions
 There are two types of interactions: *Tooltips* and *Download*.
