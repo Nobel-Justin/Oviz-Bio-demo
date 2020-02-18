@@ -1,5 +1,5 @@
 # Version
-v1.0.1 (2020-02-06)
+v1.0.2 (2020-02-18)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
@@ -10,11 +10,20 @@ Miss. Chen Lingxi ([GitHub](https://github.com/paprikachan))
 
 ## Updates
 
+### v1.0.2
+   - fix genome axis labels.
+   - maintain zoom level when base quality enabled.
+   - refine axis breakpoint labels.
+   - refine SV details at bottom left.
+   - refine CJS interval.
+   - refine PE with overlapped ends.
+   - enable reads sorting.
+
 ### v1.0.1
    - highlights of PE-reads.
    - show tooltip and text frame of reads.
    - fix reads displayings.
-   - refine Consensus Junction Sequence.
+   - refine Consensus Junction Sequence (CJS).
    - show SV details at bottom left.
    - sort PE-reads to display.
    - show base quality.
