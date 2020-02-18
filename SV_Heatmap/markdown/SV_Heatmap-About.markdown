@@ -1,5 +1,5 @@
 # Version
-v1.0.1 (2020-01-10)
+v1.0.2 (2020-02-18)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
@@ -10,6 +10,11 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
 
 ## Updates
 
+### v1.0.2
+   - fix axis mapping.
+   - add SV event information
+   - add chromosome for all region.
+   - reset colorbar max value.
 ### v1.0.1
    - fix color scheme.
    - fix axis coordinates overlaps.
