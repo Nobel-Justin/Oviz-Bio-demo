@@ -1,5 +1,5 @@
 # Version
-v1.0.2 (2020-02-18)
+v1.0.2 (2020-02-20)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
@@ -18,6 +18,8 @@ Miss. Chen Lingxi ([GitHub](https://github.com/paprikachan))
    - refine CJS interval.
    - refine PE with overlapped ends.
    - enable reads sorting.
+   - display transcript name.
+   - show alterations count in details window of reads.
 
 ### v1.0.1
    - highlights of PE-reads.

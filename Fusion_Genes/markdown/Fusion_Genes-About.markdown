@@ -1,5 +1,5 @@
 # Version
-v1.0.2 (2019-12-25)
+v1.0.3 (2020-02-21)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
@@ -8,6 +8,13 @@ Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
 Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEAAAAJ), [ORCID](https://orcid.org/0000-0002-7136-9919), [GitHub](https://github.com/Nobel-Justin))
 
 ## Updates
+
+### v1.0.3
+   - refine exon number in junction segment.
+   - allow to reset bilateral length of junction segment.
+   - show fusion details at bottom left.
+   - allow to select transcript.
+   - show domain regions on junction segment.
 
 ### v1.0.2
    - show exon interal in tooltips.

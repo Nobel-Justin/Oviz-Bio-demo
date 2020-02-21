@@ -1,5 +1,5 @@
 # Version
-v1.0.2 (2020-02-19)
+v1.0.2 (2020-02-21)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))<br/>
@@ -13,6 +13,7 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
 ### v1.0.2
    - fix overlapped gene blocks.
    - fix chr-name display in Light Theme.
+   - options to reset axis value range.
 
 ### v1.0.1
    - refine axis labels.
