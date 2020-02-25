@@ -60,7 +60,7 @@ There are four types of interactions: *Highlights*, *Tooltips*, *External Link* 
      - __*right-area*__: At __*gene-comments*__ matrix, Gene name, comments name, and comments value. At __*P/Q-value*__ histogram, Gene name, and P/Q-value.
   - __*other-panels*__: SampleID, attribute name and value.
 - **External Link**<br/>
-  - __*gene name*__: links to [genecard](https://www.genecards.org/) search webpage.
+  - __*gene name*__: links to [GeneCards](https://www.genecards.org/) search webpage.
   - __*pathway*__: links to [kegg pathway](https://www.kegg.jp/) search webpage.
   - __*GO*__: links to [amigo](http://amigo.geneontology.org/) search webpage.
 - **Download**<br/>
