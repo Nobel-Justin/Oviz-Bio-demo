@@ -1,4 +1,4 @@
-##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/Virus_IntegHotSpot/demo_data/Virus_IntegHotSpot_demo.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Virus_IntegHotSpot/demo_data/Virus_IntegHotSpot_demo.csv) the `Virus Integration CSV input`.
+##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Virus_IntegHotSpot/demo_data/HBV_PMID22634754.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/Virus_IntegHotSpot/demo_data) the `Virus Integration CSV input`.
 
 # Introduction
 Nearly 20% of human cancers are related to viral infection, especially the oncovirus, which is found commonly integrate into the host genome, and cause genome instability and higher risks to develop cancers, such as human papillomavirus (HPV) in cervical carcinoma and hepatitis B virus (HBV) in liver cancer. So far, many viral integration hotspot genes are found in oncovirus studies. We implement the `Virus: Integ HotSpot` visualization to illustrate the oncovirus integrated hotspot of group samples in a genome browser way. Oviz-Bio automatically calculates the hotspot genomic regions from the virus integration list submitted by users.
@@ -7,7 +7,7 @@ Nearly 20% of human cancers are related to viral infection, especially the oncov
 
 ## Virus Integration CSV File
 
-Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Virus_IntegHotSpot/demo_data/Virus_IntegHotSpot_demo.csv).<br/>
+Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Virus_IntegHotSpot/demo_data/HBV_PMID22634754.csv).<br/>
 The uploaded **CSV** file must match the *required* format as specified below.
 
 - **header**<br/>
@@ -56,4 +56,4 @@ The uploaded **CSV** file must match the *required* format as specified below.
   - color the integration icon with junction strand.
   - show the leftout integrations in addtional pages.
 
-*Manual version=1.0*, written by Dr. JIA Wenlong on 2019-12-19.
+*Manual version=1.1*, written by Dr. JIA Wenlong on 2020-02-26.
