@@ -69,7 +69,9 @@ There are two types of interactions: *Tooltips* and *Download*.
   + __*Gene Transcript*__: Transcript name, transcript start position, and transcript end position.
   
 - **Download**
-  One SVG file will be generated when the '**Download**' button is clicked. Two themes are supplied: the default theme with dark background and the light theme with white backgroud. To use the light theme, please click the '**Light Theme**' button.
+  One SVG file will be generated when the '**Download**' button is clicked. Two themes are supplied: the default theme with dark background and the light theme with white backgroud. 
+- **Light Theme**
+  To use the light theme, please click the '**Light Theme**' button.
 
 # Sidebar Functions
 The sidebar provides diverse options to fine-tune the display, such as manage files, reset color, select SV event, and so on.
@@ -78,9 +80,13 @@ The sidebar provides diverse options to fine-tune the display, such as manage fi
   + __*Upload*__: upload heatmap TXT file, and manage uploaded files. Note that duplicated file name will be alerted and given a random postfix.
   + __*Choose*__: choose files uploaded previously. Note that this function is ONLY available to registered user (each account has certain storage).
   + __*File Sets*__: NOT available to this page.
+- **Reads**
+  Select desired read to present.
+- **Transcripts**
+  Select desired gene transcript to present.
 - **Settings**
-  + __*Display*__: select the SV event and maximum reads number to show.
-  + __*Reads*__: choose the read to display.
-  + __*Transcript*__: choose the transcript to display.
+  + __*SV Case*__: select the SV event and maximum reads number to show.
+  + __*Sort Read*__: choose read sorted by "Junc read index" or "Left read index".
+  + __*Read Quality*__: tick to display read quality and select quality format.
 
 *Manual version=1.1*, written by Miss. CHEN Lingxi and Dr. JIA Wenlong on 2019-12-19.
