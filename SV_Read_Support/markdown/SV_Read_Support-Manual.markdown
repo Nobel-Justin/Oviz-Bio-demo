@@ -23,6 +23,7 @@ The demo output file `demo_data/simu.junc.reads.txt` stores supporting split rea
 | `splits_read_num` | 10 | the number of supporting split read pairs |
 
 Then, it list all supporting split reads, from left to right the columns are ordered by:
+
 + `read_query_name`, the read id;
 + `read_flags`, it consists of flag `j`, `J`, `r`, `R`, `d`, where
 

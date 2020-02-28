@@ -22,7 +22,7 @@ Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-de
 
 ## amp\_genes.conf\_90
 Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/CNV_Group_Samples/demo_data/CNV_Group_Samples_demo_amp_genes.conf_90.tsv). User can directly use the amp\_genes.conf\_90 output from the 'GISTIC' tool as our input file.
-The amp genes file contains amplification peaks identified in the GISTIC analysis. The first four rows are cytoband, q-value, residual q-value and wide peak boundaries. These rows identify the lesion in the same way as the all lesions file. The remaining rows list the genes contained in each wide peak. For peaks that contain no genes, the nearest gene is listed in brackets.
+The amp genes file contains amplification peaks identified in the GISTIC analysis. The first four rows are cytoband, q-value, residual q-value and wide peak boundaries. The remaining rows list the genes contained in each wide peak. For peaks that contain no genes, the nearest gene is listed in brackets.
 
 ## del\_genes.conf\_90
 Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/CNV_Group_Samples/demo_data/CNV_Group_Samples_demo_del_genes.conf_90.tsv). User can directly use the del\_genes.conf\_90 output from the 'GISTIC' tool as our input file. The del genes file contains one column for each deletion peak identified in the GISTIC analysis. The file format for the del genes file is identical to the format for the amp genes file.
