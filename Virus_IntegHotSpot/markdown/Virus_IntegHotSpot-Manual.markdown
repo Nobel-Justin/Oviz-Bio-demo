@@ -1,4 +1,5 @@
-##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Virus_IntegHotSpot/demo_data/HBV_PMID22634754.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/Virus_IntegHotSpot/demo_data) the `Virus Integration CSV input`.
+##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Virus_IntegHotSpot/demo_data/HBV_PMID22634754.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/Virus_IntegHotSpot/demo_data/HBV_PMID22634754.csv) the `Virus (HBV) Integration CSV input`.
+##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Virus_IntegHotSpot/demo_data/HPV_PMID25581428.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/Virus_IntegHotSpot/demo_data/HPV_PMID25581428.csv) the `Virus (HPV) Integration CSV input`.
 
 # Introduction
 Nearly 20% of human cancers are related to viral infection, especially the oncovirus, which is found commonly integrate into the host genome, and cause genome instability and higher risks to develop cancers, such as human papillomavirus (HPV) in cervical carcinoma and hepatitis B virus (HBV) in liver cancer. So far, many viral integration hotspot genes are found in oncovirus studies. We implement the `Virus: Integ HotSpot` visualization to illustrate the oncovirus integrated hotspot of group samples in a genome browser way. Oviz-Bio automatically calculates the hotspot genomic regions from the virus integration list submitted by users.
@@ -16,6 +17,11 @@ The uploaded **CSV** file must match the *required* format as specified below.
 | #SampleID |  Chr |  Position | Strand |  JR_count |
 |---|---|---|---|---|---|
 | T9202 | chr8 | 128276003 | - | 13 |
+
+  - This file is easy to prepare from the result of common virus integration detection tools.
+  - The `Strand` represents the relation DNA strand of virus integration. If the virus segment connect with host segment with different strands, the `Strand` value should be `-`, such as virus is plus strand and host is minus strand. If they connect in same strands, the `Strand` value should be `+`.
+  - The `JR_count` is the count of split-reads that support this virus integration. We consider `JR_count` as the credibility of this virus integration. It will be used when page trys to display only one intergration for each sample, i.e., the sidebar option `Unify samples` is enabled. The integration with the largest `JR_count` will be selected.
+  - Note that the `Gene` and `Comments` columns in demo files are just notes, and this page will not load data of these two columns.
 
 # Display Interactions
 
@@ -56,4 +62,4 @@ The uploaded **CSV** file must match the *required* format as specified below.
   - color the integration icon with junction strand.
   - show the leftout integrations in addtional pages.
 
-*Manual version=1.1*, written by Dr. JIA Wenlong on 2020-02-26.
+*Manual version=1.2*, written by Dr. JIA Wenlong on 2020-02-28.

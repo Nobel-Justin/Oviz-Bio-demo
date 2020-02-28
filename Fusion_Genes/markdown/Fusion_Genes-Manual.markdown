@@ -17,9 +17,10 @@ The uploaded **TSV** file must match the *required* format as specified below.
 |---|---|---|---|---|---|---|---|---|
 | T003 | FGFR3 | chr4 | 1808661 | 886 | TACC3 | chr4 | 1739325 | 704 |
 
-  - `up_covlen` and `down_covlen` respectively stand for the distance fusion supporting reads extend from the junction position of upstream (5') and downstream (3') fusion partern genes.
-  - `up_pos` and `down_pos` are coordinates in the genome.
-  - see more relevant information from SOAPfuse [wiki](https://sourceforge.net/p/soapfuse/wiki/Output_Files/) page.
+  - `up_pos` and `down_pos` are genomic coordinates in the genome, currently we require the position must locate in `exon region` of relevant genes.
+  - `up_covlen` and `down_covlen` respectively stand for the distance fusion supporting reads extend from the junction position of upstream (5') and downstream (3') fusion partern genes. Note that the  `up_covlen` and `down_covlen` are optional, which means these two columns could be deleted.
+  - This file is easy to prepare from the result of common fusion tools, such as SOAPfuse. See more relevant information from SOAPfuse [wiki](https://sourceforge.net/p/soapfuse/wiki/Output_Files/) page.
+
 
 # Display Interactions
 Reference normal gene body of fusion partners are displayed with junction positions marked.
@@ -44,4 +45,4 @@ Reference normal gene body of fusion partners are displayed with junction positi
   - enbale or disable Simplified mode.
   - display transcript name rather than gene name.
 
-*Manual version=1.0*, written by Dr. JIA Wenlong on 2019-12-19.
+*Manual version=1.1*, written by Dr. JIA Wenlong on 2020-02-28.
