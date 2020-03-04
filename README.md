@@ -131,7 +131,6 @@ Markdown files of 'Fusion Genes' page on Oviz-Bio Platform.
 ## Virus: Integ HotSpot
 the `Virus: Integ HotSpot` visualization displays the oncovirus integrated hotspot of group samples in a genome browser way.
 ### demo_data
-- Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Virus_IntegHotSpot/demo_data/Virus_IntegHotSpot_demo.csv).
 - [HBV_PMID22634754.csv](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Virus_IntegHotSpot/demo_data/HBV_PMID22634754.csv) and [HPV_PMID25581428.csv](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Virus_IntegHotSpot/demo_data/HPV_PMID25581428.csv) record integration cases of oncovirus HBV and HPV, respectively.
 ### markdown
 Markdown files of `Virus: Integ HotSpot` page on Oviz-Bio Platform.
