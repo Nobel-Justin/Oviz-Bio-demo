@@ -24,7 +24,7 @@ Markdown files of LandScape analysis page on Oviz-Bio Platform.
 The 'Mutations on Genes' displays SNVs and InDels with their coordinates and function annotations along the selected transcript of a given gene in three levels (genome, cDNA, and peptide).
 ### demo_data
 - Check the `Mutation CSV input` official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.mutations.csv).
-- Check the `Depth BGZ input` official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.depth.bgz).
+- Check the `Depth BGZ input` official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.depth.tsv.bgz).
 ### markdown
 Markdown files of 'Mut: On Genes' page on Oviz-Bio Platform.
 - Manual
@@ -35,8 +35,8 @@ Markdown files of 'Mut: On Genes' page on Oviz-Bio Platform.
 The 'Context' visualization, otherwise known as the 'Lego plot' of mutational frequencies, describes the distribution of mutations across batch samples on a given region. To visualize data, To visualize data, a BGZ file in the required format is needed.
 ### demo_data
 Several demo TSV files are provided.
-- [SNV_Context_demo_MutList.tsv.bgz](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/SNV_Context_demo_MutList.tsv.bgz) is the official demo BGZ file for the visualization.
-- [SNV_Context_demo_Region-1.bed](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/SNV_Context_demo_Region-1.bed) and [SNV_Context_demo_Region-2.bed](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/SNV_Context_demo_Region-2.bed) are the official demo TSV file for the optional custom region data. 
+- [SNV_Context_demo_MutList.tsv.bgz](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv.bgz) is the official demo BGZ file for the visualization.
+- [SNV_Context_demo_Region.bed](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_Region.bed) is the official demo TSV file for the optional custom region data. 
 ### markdown
 Markdown files of Context analysis page on Oviz-Bio Platform.
 - Manual
@@ -53,10 +53,10 @@ Markdown files of Signature analysis page on Oviz-Bio Platform.
 - References
 - About
 
-## SNV: Signature Dist
+## Mut: Signature Dist
 The 'Signature Dist' visualization shows the fraction of signatures within individual samples. It can also be used to show the fraction of signatures within several cancer types. To visualize data, a CSV file in the required format is needed.
 ### demo_data
-- Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Signature_dist/demo_data/SNV_Signature_dist_demo.csv).
+- Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_Signature_dist/demo_data/Mut_Signature_dist_demo.csv).
 ### markdown
 Markdown files of Signature Dist analysis page on Oviz-Bio Platform.
 - Manual
@@ -96,8 +96,8 @@ Linkage heatmap is an useful method to visualize read linkage patterns on SV eve
 
 ### demo_data
 Two demo **TXT** files are provided.
-- `10x.txt` stores the shared 10x barcodes linkage matrix.
-- `pair_end.txt` stores the shared pair end reads linkage matrix.
+- [10x_resolution80.txt](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SV_Heatmap/demo_data/10x_resolution80.txt) stores the shared 10x barcodes linkage matrix.
+- [pair_end_resolution25_ALK-KIF5B.txt](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SV_Heatmap/demo_data/pair_end_resolution25_ALK-KIF5B.txt) stores the shared paired-end reads linkage matrix.
 ### markdown
 Markdown files of SV:Heatmap analysis page on Oviz-Bio Platform.
 - Manual
@@ -107,7 +107,7 @@ Markdown files of SV:Heatmap analysis page on Oviz-Bio Platform.
 ## SV:Reads Support
 The "SV:Reads Support" visualization is frequently utilized to provide the detail illustration of supporting split reads for given SV events. To visualize data, a **TXT** file in the required format is needed.
 ### demo_data
-Two demo **TXT** files are provided, `simu.junc.reads.txt` and `junc.reads.txt` store information of supporting split reads for given SV events.
+[indels.junc.reads.txt](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SV_Read_Support/demo_data/indels.junc.reads.txt) stores information of supporting split reads for given SV events.
 ### markdown
 Markdown files of SV:Reads Support analysis page on Oviz-Bio Platform.
 - Manual
@@ -132,6 +132,7 @@ Markdown files of 'Fusion Genes' page on Oviz-Bio Platform.
 the `Virus: Integ HotSpot` visualization displays the oncovirus integrated hotspot of group samples in a genome browser way.
 ### demo_data
 - Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Virus_IntegHotSpot/demo_data/Virus_IntegHotSpot_demo.csv).
+- [HBV_PMID22634754.csv](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Virus_IntegHotSpot/demo_data/HBV_PMID22634754.csv) and [HPV_PMID25581428.csv](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Virus_IntegHotSpot/demo_data/HPV_PMID25581428.csv) record integration cases of oncovirus HBV and HPV, respectively.
 ### markdown
 Markdown files of `Virus: Integ HotSpot` page on Oviz-Bio Platform.
 - Manual
