@@ -9,7 +9,7 @@ The `LandScape` visualization is frequently utilized to provide a systematic ill
 ### demo_data
 Several demo CSV files are provided.
 - [landscape_demo.csv](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/demo_data/landscape_demo.csv) is the official demo CSV file.
-- `PMID` prefixed CSV files to present LandScape instances of published papers (see [Reference](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/markdown/LandScape-References.markdown)).
+- **PMID** prefixed CSV files to present LandScape instances of published papers (see [Reference](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/markdown/LandScape-References.markdown)).
 
 # Small Mutation
 
