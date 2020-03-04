@@ -8,7 +8,7 @@ Documents of [Oviz-Bio](https://bio.oviz.org/), a Platform for Bioinformatics Vi
 The 'LandScape' visualization is frequently utilized to provide a systematic illustration of integrative data from multiple layers of batch samples, which are always compared to each other on certain attributes, such as genes and biological pathways mutated in cancers. To visualize data, a CSV file in the required format is needed.
 ### demo_data
 Several demo CSV files are provided.
-- `landscape_demo.csv` is the official demo CSV file.
+- [landscape_demo.csv](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/demo_data/landscape_demo.csv) is the official demo CSV file.
 - `PMIDxxx.Figx.landscape.csv` files to present LandScape instances in published papers (see [Reference](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/markdown/LandScape-References.markdown)).
 ### markdown
 Markdown files of LandScape analysis page on Oviz-Bio Platform.
