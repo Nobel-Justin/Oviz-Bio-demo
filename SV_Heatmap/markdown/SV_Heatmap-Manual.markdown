@@ -1,4 +1,6 @@
-##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SV_Heatmap/demo_data/pair_end_resolution25_ALK-KIF5B.txt) the `official demo input`.
+**<span style="background-color: red">The demo file is updated in 8th March 2020, 1am (GMT+8), please download again if necessary.</span>**
+
+##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SV_Heatmap/demo_data/pair_end_resolution25_ALK-KIF5B.txt) the `official demo input`. 
 
 Additional demo files are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/SV_Heatmap/demo_data) project.
 
