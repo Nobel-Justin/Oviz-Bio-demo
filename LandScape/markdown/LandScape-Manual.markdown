@@ -1,6 +1,8 @@
-##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/LandScape/demo_data/landscape_demo.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/demo_data/landscape_demo.csv) the `official demo input`.
+##### Please try the demo files in the sidebar (`Demo File Sets`).
 
-Additional demo files from the **[References](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/markdown/LandScape-References.markdown)** are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/LandScape/demo_data) project.
+<!-- [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/LandScape/demo_data/landscape_demo.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/demo_data/landscape_demo.csv) the `official demo input`.
+
+Additional demo files from the **[References](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/LandScape/markdown/LandScape-References.markdown)** are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/LandScape/demo_data) project. -->
 
 # Introduction
 The 'LandScape' visualization is frequently utilized to provide a systematic illustration of integrative data from multiple layers of batch samples, which are always compared to each other on certain attributes, such as genes and biological pathways mutated in cancers. This online 'LandScape' visualization is designed as a fixed part (histogram and gene-panels) with additional panels (e.g., age, gender, and histology). To visualize data, upload a **CSV** file in the *required* format and use sidebar options to customize the display.
@@ -93,4 +95,4 @@ The sidebar provides diverse options to fine-tune the display, such as manage fi
      - for *numeric value* attribute, reset gradient colors and value ranges, OR, enable groups displaying with customized value ranges.
   - __*Reorder*__: reorder attributes in this additional panel.
 
-*Manual version=1.2*, written by Dr. JIA Wenlong and Mr. LI Hechen on 2019-12-11.
+*Manual version=1.3*, written by Dr. JIA Wenlong and Mr. LI Hechen on 2020-03-11.

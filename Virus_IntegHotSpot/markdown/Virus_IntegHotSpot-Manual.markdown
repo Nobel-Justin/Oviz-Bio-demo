@@ -1,5 +1,7 @@
-##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Virus_IntegHotSpot/demo_data/HBV_PMID22634754.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/Virus_IntegHotSpot/demo_data/HBV_PMID22634754.csv) the `Virus (HBV) Integration CSV input`.
-##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Virus_IntegHotSpot/demo_data/HPV_PMID25581428.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/Virus_IntegHotSpot/demo_data/HPV_PMID25581428.csv) the `Virus (HPV) Integration CSV input`.
+##### Please try the demo files in the sidebar (`Demo File Sets`).
+
+<!-- ##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Virus_IntegHotSpot/demo_data/HBV_PMID22634754.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/Virus_IntegHotSpot/demo_data/HBV_PMID22634754.csv) the `Virus (HBV) Integration CSV input`.
+##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Virus_IntegHotSpot/demo_data/HPV_PMID25581428.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/Virus_IntegHotSpot/demo_data/HPV_PMID25581428.csv) the `Virus (HPV) Integration CSV input`. -->
 
 # Introduction
 Nearly 20% of human cancers are related to viral infection, especially the oncovirus, which is found commonly integrate into the host genome, and cause genome instability and higher risks to develop cancers, such as human papillomavirus (HPV) in cervical carcinoma and hepatitis B virus (HBV) in liver cancer. So far, many viral integration hotspot genes are found in oncovirus studies. We implement the `Virus: Integ HotSpot` visualization to illustrate the oncovirus integrated hotspot of group samples in a genome browser way. Oviz-Bio automatically calculates the hotspot genomic regions from the virus integration list submitted by users.
@@ -62,4 +64,4 @@ The uploaded **CSV** file must match the *required* format as specified below.
   - color the integration icon with junction strand.
   - show the leftout integrations in addtional pages.
 
-*Manual version=1.2*, written by Dr. JIA Wenlong on 2020-02-28.
+*Manual version=1.3*, written by Dr. JIA Wenlong on 2020-03-11.

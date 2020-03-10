@@ -1,4 +1,6 @@
-##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Signature/demo_data/SNV_Signature_demo.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Signature/demo_data/SNV_Signature_demo.csv) the `official demo input`.
+##### Please try the demo file in the sidebar (`Demo File Sets`).
+
+<!-- ##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Signature/demo_data/SNV_Signature_demo.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Signature/demo_data/SNV_Signature_demo.csv) the `official demo input`. -->
 
 # Introduction
 The 'Signature' visualization is wildly used in mutational signature analysis. It shows the signature profile with the conventional 96 mutation type classification. The classification first divides mutations into six substitution subtypes, namely C>A, C>G, C>T, T>A, T>C, and T>G. Subsequently, taking the information from the 5' to 3' adjacent bases leads to said 96 possible mutation types. Moreover, we compare each signature with all recorded signature references in the [COSMIC database](https://cancer.sanger.ac.uk/cosmic/signatures/SBS/) by the cosine similarity test. The top three similar signature references are listed with their percentage of similarity. In particular, possible sequencing artifacts in the signature references are shown in pink while others in blue.
@@ -39,4 +41,4 @@ The sidebar provides options to manage files.
   - __*Choose*__: choose files uploaded previously. Note that this function is ONLY available to registered users (each account has certain storage).
   - __*File Sets*__: NOT available to this page.
 
-*Manual version=1.1*, written by Miss. LI Shiying and Dr. JIA Wenlong on 2020-02-03.
+*Manual version=1.2*, written by Miss. LI Shiying and Dr. JIA Wenlong on 2020-03-11.

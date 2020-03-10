@@ -1,5 +1,7 @@
-##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.mutations.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.mutations.csv) the `Mutation CSV input`.
-##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.depth.tsv.bgz) the `Depth BGZ input` (Optional).
+##### Please try the demo file in the sidebar (`Demo File Sets`).
+
+<!-- ##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.mutations.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.mutations.csv) the `Mutation CSV input`.
+##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.depth.tsv.bgz) the `Depth BGZ input` (Optional). -->
 
 # Introduction
 The 'Mutations on Genes' displays SNVs and InDels with their coordinates and function annotations along the selected transcript of a given gene. Mutation information can be viewed in three levels (genome, cDNA, and peptide). Different icons are applied to mutations according to their types and function changes, such as synonymous and missense SNV, frame-shift InDels. Interactive tooltip gives more information, including mutation coordinates, function area and details of exons. Sidebar offers options to adjust displays, such as changing resolution, and selecting mutation. This visualization is commonly utilized to show the mutation landscape of given genes in a group of cancer samples.
@@ -80,4 +82,4 @@ The uploaded file must match the *required* format as specified below.
   - reset the UTR:CDS displaying resolution scale in cDNA level.
   - enbale or disable displaying depth spectrum.
 
-*Manual version=1.2*, written by Dr. JIA Wenlong on 2020-01-29.
+*Manual version=1.3*, written by Dr. JIA Wenlong on 2020-03-11.

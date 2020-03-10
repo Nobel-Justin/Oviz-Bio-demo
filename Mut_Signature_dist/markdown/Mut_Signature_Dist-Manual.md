@@ -1,4 +1,6 @@
-##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/Mut_Signature_dist/demo_data/Mut_Signature_dist_demo.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_Signature_dist/demo_data/Mut_Signature_dist_demo.csv) the `official demo input`.
+##### Please try the demo file in the sidebar (`Demo File Sets`).
+
+<!-- ##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/Mut_Signature_dist/demo_data/Mut_Signature_dist_demo.csv) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_Signature_dist/demo_data/Mut_Signature_dist_demo.csv) the `official demo input`. -->
 
 # Introduction
 The 'Signature Dist' visualization shows the fraction of signatures within individual samples. It can also be used to show the fraction of signatures within several cancer types.

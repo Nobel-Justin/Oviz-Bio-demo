@@ -1,5 +1,7 @@
-##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv.bgz) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv.bgz) the `SNV TSV.bgz input` (required).
-##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Context/demo_data/SNV_Context_demo_Region.bed) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_Region.bed) the `Region BED input` (optional).
+##### Please try the demo file in the sidebar (`Demo File Sets`).
+
+<!-- ##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv.bgz) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv.bgz) the `SNV TSV.bgz input` (required).
+##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Context/demo_data/SNV_Context_demo_Region.bed) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_Region.bed) the `Region BED input` (optional). -->
 
 # Introduction
 The 'Context' visualization, otherwise known as the 'Lego plot' of mutational frequencies, describes the distribution of mutations across batch samples on a given region. Base substitutions are divided into six types to represent the six possible base changes (each type represented by a different color as shown in the “Mutation Type” legend). Substitutions in each type are further subdivided by the 16 possible flanking nucleotides surrounding the mutated base as listed in “Trinucleotide Context” table. The pie chart illustrates the percentage of all mutations types on said batch samples. To visualize data, upload a **BGZ** file in the *required* format and use sidebar options to customize the display.
@@ -70,4 +72,4 @@ The sidebar provides diverse options to fine-tune the display, namely managing f
   - __*Y axis*__: provide three measurements of the mutation count, namely the numeric sum of the mutation, mutations per Mb and the percentage among all mutations.
   - __*Filter by tumor\_f*__: choose the compare method and the threshold for filtering mutations.
 
-*Manual version=1.2*, written by Miss. Li Shiying and Dr. JIA Wenlong on 2019-12-27.
+*Manual version=1.3*, written by Miss. Li Shiying and Dr. JIA Wenlong on 2020-03-11.

@@ -1,8 +1,10 @@
 **<span style="background-color: red">The demo file is updated in 8th March 2020, 1am (GMT+8), please download again if necessary.</span>**
 
-##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SV_Heatmap/demo_data/pair_end_resolution25_ALK-KIF5B.txt) the `official demo input`. 
+##### Please try the demo file in the sidebar (`Demo File Sets`).
 
-Additional demo files are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/SV_Heatmap/demo_data) project.
+<!-- ##### [Download](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SV_Heatmap/demo_data/pair_end_resolution25_ALK-KIF5B.txt) the `official demo input`. 
+
+Additional demo files are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/SV_Heatmap/demo_data) project. -->
 
 # Introduction
 The "SV: Heatmap" may demonstrate the read and barcode linkage of SV events for WGS pair-end reads and 10x linked reads, respectively. We adopt heatmap to manifest the sequential read/barcode linkages on the surrounding region of the two breakpoints for the given SV event.  As indicated in the color bar, the darker the heatmap entry, the more supported ties. Users may upload the specified input file that holding several SV events, then manage the sidebar to customize the heatmap color scheme and select the desired SV event to present.
@@ -120,4 +122,4 @@ The sidebar provides diverse options to fine-tune the display, such as manage fi
 - **SV Points**
   A table of SV events can be selected to visualize. Table headers `Gp`, `5'`, `Pos`, `3'`, `Pos`, `Type` respectively refer to the SV group id, chromosome of 5' breakpoint, position of 5' breakpoint, chromosomeof 3' breakpoint, position of 3' breakpoint, variation type of SV event. "blue" and "yellow" stands for positive and negative strand respectively. **Users can click the header to reorder the table.**
 
-*Manual version=1.0.3*, written by Miss. CHEN Lingxi on 2020-02-26.
+*Manual version=1.0.4*, written by Miss. CHEN Lingxi and Dr. JIA Wenlong on 2020-03-11.

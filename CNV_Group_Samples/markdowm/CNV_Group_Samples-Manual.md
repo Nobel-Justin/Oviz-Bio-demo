@@ -1,4 +1,6 @@
-##### [Download a zip of demo file set](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/CNV_Group_Samples/demo_data/CNV_Group_Samples_demo.zip) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/CNV_Group_Samples/demo_data/CNV_Group_Samples_demo.zip) the `official demo inputs`.
+##### Please try the demo file in the sidebar (`Demo File Sets`).
+
+<!-- ##### [Download a zip of demo file set](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/CNV_Group_Samples/demo_data/CNV_Group_Samples_demo.zip) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/CNV_Group_Samples/demo_data/CNV_Group_Samples_demo.zip) the `official demo inputs`. -->
 
 # Introduction
 The 'Group Samples' visualization is an interactive and extended version of the output plot from 'GISTIC', a bioinformatics tool for identifying regions of the genome that are significantly amplified or deleted across a set of samples. In this visualization, each aberration is assigned a G-score that considers the amplitude of the aberration as well as the frequency of its occurrence across samples. The G-scores are the drawn as the red (amplification) and blue (deletion) lines on the plot. False Discovery Rate q-values are then calculated for the aberrant regions and regions with q-values below a user-defined threshold (shown as the two green lines) are considered significant. The “wide peak”, determined using a leave-one-out algorithm to allow for errors in the boundaries in a single sample, are shown by the text tags extending from the line plot. The “wide peak” boundaries are more robust for identifying the most likely gene targets in the region. We also lists genes found in each “wide peak” region in a gene box. To visualize data, upload three **TSV** files in the *required* format and use sidebar options to customize the display.
@@ -50,4 +52,4 @@ The sidebar provides diverse options to fine-tune the display, like managing fil
 - **Setting**<br/>
   - __*q-value*__: setting the q-value threshold between 0.1 to 0.9.
 
-*Manual version=1.0*, written by Miss. Li Shiying on 2019-12-19.
+*Manual version=1.1*, written by Miss. Li Shiying on 2020-03-11.
