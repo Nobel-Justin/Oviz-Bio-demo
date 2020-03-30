@@ -3,12 +3,12 @@
 <!-- ##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SV_Read_Support/demo_data/indels.junc.reads.txt) the `official demo input`. -->
 
 # Introduction
-For one given sv event, "SV: Read Support" exhibits all split reads across the breakpoints.  The top and bottom chromosome axis respectively represent the 5' and 3' breakpoint position, associated genes and transcripts annotation are also illustrated. The "consensus junction sequence" with white text in the black ground on the top is the concatenated SV junction sequence. All supporting split reads were aligned to the consensus junction sequence base by base. Users may zoom in to display the base pair of split reads in detail. Read base-pair quality are colored followed the scheme of `samtools tview`, for instance, `Blue:0-9 Green:10-19 Yellow:20-29 White:>=30`. All alignment mismatches are colored in red. Small insertions were labelled with yellow “inverted triangle". Small deleteions were labelled with red '-'. Micro-homology base pairs are highlighted in pink. Users may upload the required input file, then utilize sidebar options to select the desired SV event and read to display.
+For one given SV event, "SV: Read Support" exhibits all split reads across the breakpoints.  The top and bottom chromosome axis respectively represent the 5' and 3' breakpoint position, associated genes and transcripts annotation are also illustrated. The "consensus junction sequence" with white text in the black ground on the top is the concatenated SV junction sequence. All supporting split reads were aligned to the consensus junction sequence base by base. Users may zoom in to display the base pair of split reads in detail. Read base-pair quality are colored followed the scheme of `samtools tview`, for instance, `Blue:0-9 Green:10-19 Yellow:20-29 White:>=30`. All alignment mismatches are colored in red. Small insertions were labeled with yellow “inverted triangle". Small deletions were labeled with red '-'. Micro-homology base pairs are highlighted in pink. Users may upload the required input file, then utilize sidebar options to select the desired SV event and read to display.
 
-# SV:Read Support Data (TXT file)
+# SV: Read Support Data (TXT file)
 The uploaded **TXT** file must match the *required* format.
 
-User can generate the `junc.reads.txt` files using `read_support.py` with **BAM** file and [SvABA](https://github.com/walaj/svaba) generated sv **VCF** file. Please check https://github.com/paprikachan/ComplexSV for source code and usage of `read_support.py`.
+User can generate the `junc.reads.txt` files using `read_support.py` with **BAM** file and [SvABA](https://github.com/walaj/svaba) generated SV **VCF** file. Please check https://github.com/paprikachan/ComplexSV for source code and usage of `read_support.py`.
 
 The demo output file `demo_data/indels.junc.reads.txt` stores supporting split reads for given SV. It starts with "sv" section,  the description of headers are listed below:
 
@@ -60,36 +60,36 @@ Then, it list all supporting split reads, from left to right the columns are ord
 + `read_meta_info`, stores all read meta information, e.g. `BX:NONE;INS:-12(3),15(2);DEL:-86(1),36(4)`.
   - `BX:GACACTAGTTAAGATG-1` is the barcode associated with the read.
   - `INS:-12(3),15(2)` shows the small insertions on reads. `-12(3)` means that the first base of the insertion has 3 base pairs and its index is -12, and `15(2)` means that the first base of the second insertion has 2 base pairs and locates at index 15.  Note that the insertion sequence will not be displayed on reads, but marked with a yellow “inverted triangle” at the insertion position.
-  - `DEL:-86(1),36(4)` shows the small deletaion on reads. `36(4)` means that the front base of the deleted fragment is index 36, and the length of the deleted fragment is 4 bases. The deletion sequence is filled with red '-' on reads.
+  - `DEL:-86(1),36(4)` shows the small deletion on reads. `36(4)` means that the front base of the deleted fragment is index 36, and the length of the deleted fragment is 4 bases. The deletion sequence is filled with red '-' on reads.
 
 
 # Display Interactions
 There are two types of interactions: *Tooltips* and *Download*.
 
 - **Tooltips**
-  Tooltips will show necessary information of object that the mouse points to.
-  + __*Read*__: Current read and its paired read will be enhanced. Information to show: read id, read offset, wheather this read or its paired read is split read and reversed, attached barcode if applicable. If the read body is clicked, floating box contained above information will appear, users can select, copy, and paste the text they desire.
-  + __*Gene Transcript*__: Transcript name, transcript start position, and transcript end position.
+  Tooltips will show the necessary information of the object that the mouse points to.
+  + __*Read*__: Current read and its paired read will be enhanced. Information to show: read id, read offset, whether this read or its paired read is split read and reversed, attached barcode if applicable. If the read body is clicked, the floating box contained above information will appear. Users can select, copy, and paste the text they desire.
+  + __*Gene Transcript*__: Transcript name, transcript start position and transcript end position.
   
 - **Download**
-  One SVG file will be generated when the '**Download**' button is clicked. Two themes are supplied: the default theme with dark background and the light theme with white backgroud. 
+  One SVG file will be generated when the '**Download**' button is clicked. Two themes are supplied: the default theme with a dark background and the light theme with a light background. 
 - **Light Theme**
   To use the light theme, please click the '**Light Theme**' button.
 
 # Sidebar Functions
-The sidebar provides diverse options to fine-tune the display, such as manage files, reset color, select SV event, and so on.
+The sidebar provides diverse options to fine-tune the display, such as manage files, reset color, select SV events, and so on.
 
 - **Files**
-  + __*Upload*__: upload heatmap TXT file, and manage uploaded files. Note that duplicated file name will be alerted and given a random postfix.
-  + __*Choose*__: choose files uploaded previously. Note that this function is ONLY available to registered user (each account has certain storage).
+  + __*Upload*__: upload heatmap TXT file, and manage uploaded files. Note that the duplicated file name will be alerted and given a random postfix.
+  + __*Choose*__: choose files uploaded previously. Note that this function is ONLY available to the registered user (each account has certain storage).
   + __*File Sets*__: NOT available to this page.
 - **Reads**
-  Select desired read to present.
+  Select the desired read to present.
 - **Transcripts**
-  Select desired gene transcript to present.
+  Select the desired gene transcript to present.
 - **Settings**
-  + __*SV Case*__: select the SV event and maximum reads number to show.
+  + __*SV Case*__: select the SV event, and maximum reads number to show.
   + __*Sort Read*__: choose read sorted by "Junc read index" or "Left read index".
-  + __*Read Quality*__: tick to display read quality and select quality format.
+  + __*Read Quality*__: tick to display read quality and select a quality format.
 
-*Manual version=1.2*, written by Miss. CHEN Lingxi and Dr. JIA Wenlong on 2020-03-11.
+*Manual version=1.2.1*, written by Miss. CHEN Lingxi and Dr. JIA Wenlong on 2020-03-30.
