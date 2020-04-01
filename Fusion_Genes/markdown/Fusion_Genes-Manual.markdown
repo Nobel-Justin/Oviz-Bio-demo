@@ -9,7 +9,7 @@ Fusion gene is a chimeric transcript consists of gene bodies from two or more pr
 
 ## Fusion TSV File
 
-Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Fusion_Genes/demo_data/Fusion_Genes_demo.tsv).<br/>
+Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Fusion_Genes/demo_data).<br/>
 The uploaded **TSV** file must match the *required* format as specified below.
 
 - **header**<br/>
@@ -47,4 +47,4 @@ Reference normal gene body of fusion partners are displayed with junction positi
   - enbale or disable Simplified mode.
   - display transcript name rather than gene name.
 
-*Manual version=1.2*, written by Dr. JIA Wenlong on 2020-03-11.
+*Manual version=1.3*, written by Dr. JIA Wenlong on 2020-04-02.

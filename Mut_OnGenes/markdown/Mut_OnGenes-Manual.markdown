@@ -7,15 +7,12 @@
 The 'Mutations on Genes' displays SNVs and InDels with their coordinates and function annotations along the selected transcript of a given gene. Mutation information can be viewed in three levels (genome, cDNA, and peptide). Different icons are applied to mutations according to their types and function changes, such as synonymous and missense SNV, frame-shift InDels. Interactive tooltip gives more information, including mutation coordinates, function area and details of exons. Sidebar offers options to adjust displays, such as changing resolution, and selecting mutation. This visualization is commonly utilized to show the mutation landscape of given genes in a group of cancer samples.
 
 # Input Files
+Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_OnGenes/demo_data).
 
-## Mutation CSV File
+## Mutation File
 
-Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.mutations.csv).<br/>
-Note that backend annotation task will be activated once mutation csv file is uploaded. User could check the job status in task monitor at the bottom of analysis page.<br/>
-The uploaded **CSV** file must match the *required* format as specified below.
-
-- **header**<br/>
-  The header should follow the following format:
+Note that backend annotation task will be activated once mutation file is uploaded. User could check the job status in task monitor at the bottom of analysis page.<br/>
+This file could be standard MAF file (see [format](https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)) or a simple CSV file in format specified below.
 
 | #SampleID |  alt_type |  chr | pos |  ref_allele | alt_allele | gene |
 |---|---|---|---|---|---|---|---|
@@ -24,11 +21,7 @@ The uploaded **CSV** file must match the *required* format as specified below.
 ## Depth tsv.BGZ File (Optional)
 
 User could upload a **tsv.bgz** compressed file to supply the depth distribution of the gene region.<br/>
-Download the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/raw/master/Mut_OnGenes/demo_data/Mut_OnGenes_demo.depth.tsv.bgz). <br/>
 The uploaded file must match the *required* format as specified below.
-
-- **header**<br/>
-  The header should follow the following format:
 
 | #chr |  pos |  depth |
 |---|---|---|
@@ -59,7 +52,7 @@ The uploaded file must match the *required* format as specified below.
 - **Zoom in/out**<br/>
   the main display level can be zoomed in/out via mouse wheel.
 - **Pages**<br/>
-  click 'Prev' or 'Next' to go to other genes (as listed in the Mutation CSV File).
+  click 'Prev' or 'Next' to go to other genes (as listed in the Mutation File).
 - **Download**<br/>
   One SVG file will be generated when the '**Download**' button is clicked. Two themes are supplied: the default theme with a dark background and the light theme with white background. To use the light theme, please click the '**Light Theme**' button.
 
@@ -82,4 +75,4 @@ The uploaded file must match the *required* format as specified below.
   - reset the UTR:CDS displaying resolution scale in cDNA level.
   - enbale or disable displaying depth spectrum.
 
-*Manual version=1.3*, written by Dr. JIA Wenlong on 2020-03-11.
+*Manual version=1.4*, written by Dr. JIA Wenlong on 2020-04-02.

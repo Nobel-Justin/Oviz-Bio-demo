@@ -6,7 +6,7 @@
 For one given SV event, "SV: Read Support" exhibits all split reads across the breakpoints.  The top and bottom chromosome axis respectively represent the 5' and 3' breakpoint position, associated genes and transcripts annotation are also illustrated. The "consensus junction sequence" with white text in the black ground on the top is the concatenated SV junction sequence. All supporting split reads were aligned to the consensus junction sequence base by base. Users may zoom in to display the base pair of split reads in detail. Read base-pair quality are colored followed the scheme of `samtools tview`, for instance, `Blue:0-9 Green:10-19 Yellow:20-29 White:>=30`. All alignment mismatches are colored in red. Small insertions were labeled with yellow “inverted triangle". Small deletions were labeled with red '-'. Micro-homology base pairs are highlighted in pink. Users may upload the required input file, then utilize sidebar options to select the desired SV event and read to display.
 
 # SV: Read Support Data (TXT file)
-The uploaded **TXT** file must match the *required* format.
+The uploaded **TXT** file must match the *required* format. Several demo files are provided in the [GitHub](https://github.com/Nobel-Justin/Oviz-Bio-demo/tree/master/SV_Read_Support/demo_data) project.
 
 User can generate the `junc.reads.txt` files using `read_support.py` with **BAM** file and [SvABA](https://github.com/walaj/svaba) generated SV **VCF** file. Please check https://github.com/paprikachan/ComplexSV for source code and usage of `read_support.py`.
 
@@ -92,4 +92,4 @@ The sidebar provides diverse options to fine-tune the display, such as manage fi
   + __*Sort Read*__: choose read sorted by "Junc read index" or "Left read index".
   + __*Read Quality*__: tick to display read quality and select a quality format.
 
-*Manual version=1.2.1*, written by Miss. CHEN Lingxi and Dr. JIA Wenlong on 2020-03-30.
+*Manual version=1.2.2*, written by Miss. CHEN Lingxi and Dr. JIA Wenlong on 2020-04-02.

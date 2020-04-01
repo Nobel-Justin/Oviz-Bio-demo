@@ -8,7 +8,7 @@ The 'Signature Dist' visualization shows the fraction of signatures within indiv
 # Signature Dist Data (CSV file)
 The uploaded **CSV** file must match the *required* format as specified below.<br/>
 The input is mutation signature compositions in batch of samples using NMF algorithm, e.g., [decipherMutationalSignatures](https://github.com/lixiangchun/decipherMutationalSignatures).<br/>
-Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_Signature_dist/demo_data/Mut_Signature_dist_demo.csv).
+Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_Signature_dist/demo_data).
 
 - **header**<br/>
   The first line of the file should be a header that contains column names as keys. The header should follow the following format:
@@ -47,4 +47,4 @@ The sidebar provides options to manage files and reorder samples.
 - **Settings**<br/>
   In settings, user can reorder samples by ascending or descending order of the sample name or the fraction of a certain signature.
 
-*Manual version=1.1*, written by Miss. LI Shiying and Dr. JIA Wenlong on 2020-02-06.
+*Manual version=1.2*, written by Miss. LI Shiying and Dr. JIA Wenlong on 2020-04-02.

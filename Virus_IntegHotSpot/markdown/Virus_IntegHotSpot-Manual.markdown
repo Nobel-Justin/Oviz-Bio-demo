@@ -10,7 +10,7 @@ Nearly 20% of human cancers are related to viral infection, especially the oncov
 
 ## Virus Integration CSV File
 
-Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Virus_IntegHotSpot/demo_data/HBV_PMID22634754.csv).<br/>
+Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Virus_IntegHotSpot/demo_data).<br/>
 The uploaded **CSV** file must match the *required* format as specified below.
 
 - **header**<br/>
@@ -64,4 +64,4 @@ The uploaded **CSV** file must match the *required* format as specified below.
   - color the integration icon with junction strand.
   - show the leftout integrations in addtional pages.
 
-*Manual version=1.3*, written by Dr. JIA Wenlong on 2020-03-11.
+*Manual version=1.4*, written by Dr. JIA Wenlong on 2020-04-02.

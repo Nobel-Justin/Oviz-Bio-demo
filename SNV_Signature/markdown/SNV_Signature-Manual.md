@@ -7,7 +7,7 @@ The 'Signature' visualization is wildly used in mutational signature analysis. I
 
 # Signature Data (CSV file)
 The uploaded **CSV** file must match the *required* format as specified below.<br/>
-Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Signature/demo_data/SNV_Signature_demo.csv).
+Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Signature/demo_data).
 
 - **header**<br/>
   The first line of the file should be a header that contains column names as keys. The header should follow the following format:
@@ -41,4 +41,4 @@ The sidebar provides options to manage files.
   - __*Choose*__: choose files uploaded previously. Note that this function is ONLY available to registered users (each account has certain storage).
   - __*File Sets*__: NOT available to this page.
 
-*Manual version=1.2*, written by Miss. LI Shiying and Dr. JIA Wenlong on 2020-03-11.
+*Manual version=1.3*, written by Miss. LI Shiying and Dr. JIA Wenlong on 2020-04-02.
