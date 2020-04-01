@@ -10,9 +10,9 @@ The 'Context' visualization, otherwise known as the 'Lego plot' of mutational fr
 Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data).
 
 ## SNV File
-This input file could be standard MAF file (see [format](https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)) or VCF file.
+This input file could be standard **MAF** file (see [format](https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)) or **VCF** file.
 
-Or, a simple TSV file in format specified below.
+Or, a simple **TSV** file in format specified below.
 
 | #contig |  position | ref_allele |  alt_allele | tumor_f |
 |---|---|---|---|---|
