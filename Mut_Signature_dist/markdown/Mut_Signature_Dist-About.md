@@ -11,7 +11,7 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
 ## Updates
 
 ### v1.0.1
-   - add light theme.
+   - add the light theme.
 
 ### v1.0.0
    - initial functions implemented.

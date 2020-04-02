@@ -20,7 +20,7 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
    - fix circles lowering transparency after switching chromosome.
 
 ### v1.0.1
-   - add highlighting tracks on the middle and bottom panels as well as the corresponding circle in the top panel whenever mouse moves to one of them.
+   - add highlighting tracks on the middle and bottom panels as well as the corresponding circle in the top panel whenever the mouse moves to one of them.
    - fix circles of the chosen chromosome being hindered by other circles.
 
 ### v1.0.0

@@ -11,8 +11,8 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
 ## Updates
 
 ### v1.0.1
-   - fix giving random file name when downloading data.
-   - add light theme.
+   - fix giving random file names when downloading data.
+   - add the light theme.
 
 ### v1.0.0
    - initial functions implemented.

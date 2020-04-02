@@ -17,14 +17,14 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
 
 ### v1.0.1
    - fix 'Off' and 'Remove' bottom (Labels, Sidebar) being able to get chosen (highlighted) simultaneously.
-   - fix filtering with custom bed file.
-   - fix 'apply' bottom (Choose tab, Files, Sidebar) not active when choosing another file.
+   - fix filtering with the custom bed file.
+   - fix 'apply' bottom (the Choose tab, Files, Sidebar) not active when choosing another file.
    - fix legend 'C>T or G> A' to be 'C>T or G>A'.
    - fix label not becoming transparent with the bin when mouse moving.
    - change titles 'Interval' and 'Y axis' (Settings, Sidebar) to 'Region' and 'Measurement of counts' respectively.
-   - change input file type from TSV to BGZ.
+   - change the input file type from TSV to BGZ.
    - add filtering by tumor frequency in Sidebar
-   - add light theme. 
+   - add the light theme. 
 
 ### v1.0.0
    - initial functions implemented.

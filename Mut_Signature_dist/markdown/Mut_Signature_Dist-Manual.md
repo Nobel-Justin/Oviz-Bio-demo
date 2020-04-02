@@ -32,7 +32,7 @@ There are three types of interactions: *Highlights*, *Scrolling* and *Download*.
 - **Highlights**<br/>
     The bin being pointed to will be highlighted.
 - **Scrolling**<br/>
-    When the samples cannot be fitted in one page, a scroller will appear in the bottom and user can drag the scroller to view different samples.
+    When the samples cannot be fitted on one page, a scroller will appear in the bottom and users can drag the scroller to view different samples.
 - **Download**<br/>
   One SVG file will be generated when the '**Download**' button is clicked. The SVG file only captures the current view determined by the scroller.
 
@@ -45,6 +45,6 @@ The sidebar provides options to manage files and reorder samples.
   - __*Choose*__: choose files uploaded previously. Note that this function is ONLY available to registered users (each account has certain storage).
   - __*File Sets*__: NOT available to this page.
 - **Settings**<br/>
-  In settings, user can reorder samples by ascending or descending order of the sample name or the fraction of a certain signature.
+  In settings, users can reorder samples by ascending or descending order of the sample name or the fraction of a certain signature.
 
 *Manual version=1.2*, written by Miss. LI Shiying and Dr. JIA Wenlong on 2020-04-02.
