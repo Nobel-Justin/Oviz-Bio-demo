@@ -13,17 +13,15 @@ Nearly 20% of human cancers are related to viral infection, especially the oncov
 Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Virus_IntegHotSpot/demo_data).<br/>
 The uploaded **CSV** file must match the *required* format as specified below.
 
-- **header**<br/>
-  The header should follow the following format:
-
 | #SampleID |  Chr |  Position | Strand |  JR_count |
 |---|---|---|---|---|---|
 | T9202 | chr8 | 128276003 | - | 13 |
 
-  - This file is easy to prepare from the result of common virus integration detection tools.
-  - The `Strand` represents the relation DNA strand of virus integration. If the virus segment connect with host segment with different strands, the `Strand` value should be `-`, such as virus is plus strand and host is minus strand. If they connect in same strands, the `Strand` value should be `+`.
-  - The `JR_count` is the count of split-reads that support this virus integration. We consider `JR_count` as the credibility of this virus integration. It will be used when page trys to display only one intergration for each sample, i.e., the sidebar option `Unify samples` is enabled. The integration with the largest `JR_count` will be selected.
-  - Note that the `Gene` and `Comments` columns in demo files are just notes, and this page will not load data of these two columns.
+  - the first line should be the `header` as specified above.
+  - this file is easy to prepare from the result of common virus integration detection tools.
+  - the `Strand` represents the relation DNA strand of virus integration. If the virus segment connect with host segment with different strands, the `Strand` value should be `-`, such as virus is plus strand and host is minus strand. If they connect in same strands, the `Strand` value should be `+`.
+  - the `JR_count` is the count of split-reads that support this virus integration. We consider `JR_count` as the credibility of this virus integration. It will be used when page trys to display only one intergration for each sample, i.e., the sidebar option `Unify samples` is enabled. The integration with the largest `JR_count` will be selected.
+  - note that the `Gene` and `Comments` columns in demo files are just notes, and this page will not load data of these two columns.
 
 # Display Interactions
 

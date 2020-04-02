@@ -6,12 +6,10 @@
 The 'Signature Dist' visualization shows the fraction of signatures within individual samples. It can also be used to show the fraction of signatures within several cancer types.
 
 # Signature Dist Data (CSV file)
-The uploaded **CSV** file must match the *required* format as specified below.<br/>
 The input is mutation signature compositions in batch of samples using NMF algorithm, e.g., [decipherMutationalSignatures](https://github.com/lixiangchun/decipherMutationalSignatures).<br/>
 Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Mut_Signature_dist/demo_data).
 
-- **header**<br/>
-  The first line of the file should be a header that contains column names as keys. The header should follow the following format:
+The uploaded **CSV** file must match the *required* format as specified below.
 
 | Observations |  T01 | T02 | T03 | T04 | T05 | T06 | T07 |
 |---|---|---|---|---|---|---|---|
@@ -20,11 +18,10 @@ Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-de
 | signature ..  | ... | ... | ... | ... | ... | ... | ... |
 | signature N   | ... | ... | ... | ... | ... | ... | ... |
 
+  - the first line should be the `header` as specified above.
   - `Observations` takes the values of the names of signatures.
   - keys like `T01` is the name of an individual sample. The number of keys is not limited.
-
-- **rows**<br/>
-  Each row in the file is the measure of a specified signature in each individual sample. Note that this measure does not have to be normalized to 100%.
+  - each row in the file is the measure of a specified signature in each individual sample. All measures will be normalized to 100% in each sample during visualization.
 
 # Display Interactions
 There are three types of interactions: *Highlights*, *Scrolling* and *Download*.

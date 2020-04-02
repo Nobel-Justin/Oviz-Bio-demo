@@ -12,16 +12,14 @@ Fusion gene is a chimeric transcript consists of gene bodies from two or more pr
 Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Fusion_Genes/demo_data).<br/>
 The uploaded **TSV** file must match the *required* format as specified below.
 
-- **header**<br/>
-  The header should follow the following format:
-
 | #Sample-ID |  up_gene | up_chr | up_pos |  up_covlen | down_gene | down_chr | down_pos |  down_covlen |
 |---|---|---|---|---|---|---|---|---|
 | T003 | FGFR3 | chr4 | 1808661 | 886 | TACC3 | chr4 | 1739325 | 704 |
 
+  - the first line should be the `header` as specified above.
   - `up_pos` and `down_pos` are genomic coordinates in the genome, currently we require the position must locate in `exon region` of relevant genes.
-  - `up_covlen` and `down_covlen` respectively stand for the distance fusion supporting reads extend from the junction position of upstream (5') and downstream (3') fusion partern genes. Note that the  `up_covlen` and `down_covlen` are optional, which means these two columns could be deleted.
-  - This file is easy to prepare from the result of common fusion tools, such as SOAPfuse. See more relevant information from SOAPfuse [wiki](https://sourceforge.net/p/soapfuse/wiki/Output_Files/) page.
+  - `up_covlen` and `down_covlen` respectively stand for the distance fusion supporting reads extend from the junction position of upstream (5') and downstream (3') fusion partern genes. Note that the `up_covlen` and `down_covlen` are optional, i.e., these two columns could be deleted.
+  - this file is easy to prepare from the result of common fusion tools, such as SOAPfuse. See more relevant information from SOAPfuse [wiki](https://sourceforge.net/p/soapfuse/wiki/Output_Files/) page.
 
 
 # Display Interactions

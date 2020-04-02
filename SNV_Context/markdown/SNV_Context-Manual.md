@@ -18,6 +18,7 @@ Or, a simple **TSV** file in the format specified below.
 |---|---|---|---|---|
 | chr1  | 101686  | A | G | 0.113636 |
 
+- the first line should be the `header` as specified above.
 - `#` prefix is mandatory to indicate the header line.
 - `contig` and `position` respectively stand for the chromosome and position of the mutation.
 - `ref_allele` and `alt_allele` respectively stand for the base before and after the mutation.
@@ -31,7 +32,7 @@ Or, a simple **TSV** file in the format specified below.
 
 A custom bed file allows users to replace the default region used in our website, which is the whole genome sequence. We will filter out mutations that are not in the custom region during the calculation. Note that the uploaded bed file is only applied when you **choose the custom bed option** in the **Settings** section of the sidebar. 
 
-The uploaded **BED** file must match the *required* format as specified below (plase keep the header).
+The uploaded **BED** file must match the *required* format as specified below (please keep the `header`).
 
 | #chr |  startPos |  endPos |
 |---|---|---|

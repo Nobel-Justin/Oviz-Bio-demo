@@ -12,13 +12,13 @@ Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-de
 ## Mutation File
 
 Note that backend annotation task will be activated once mutation file is uploaded. User could check the job status in task monitor at the bottom of analysis page.<br/>
-This file could be standard **MAF** file (see [format](https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)) or a simple **CSV** file in format specified below.
+This file could be standard **MAF** file (see [format](https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)) or a simple **CSV** file in format specified below (please keep the `header`).
 
 | #SampleID |  alt_type |  chr | pos |  ref_allele | alt_allele | gene |
 |---|---|---|---|---|---|---|---|
 | TCGA-AK-3451 | SNP | chr3 | 10183646 | G | A | VHL |
 
-## Depth tsv.BGZ File (Optional)
+## Depth TSV BGZ File (Optional)
 
 User could upload a **tsv.bgz** compressed file to supply the depth distribution of the gene region.<br/>
 The uploaded file must match the *required* format as specified below.
@@ -27,13 +27,14 @@ The uploaded file must match the *required* format as specified below.
 |---|---|---|
 | chr1  | 10182642  | 100 |
 
+- the first line should be the `header` as specified above.
 - `#` prefix is mandatory to indicate the header line.
 - `chr` and `pos` respectively stand for the chromosome and position of the mutation.
 - `depth` is the sequencing depth at this genomic position.
 
   The TSV file must be `sorted` by chromosome and position, and compressed by `bgzip` tools for `tabix` indexing to support fast data processing at the backend of Oviz-Bio.<br/>
   For example, run the following command in the linux terminal (bgzip installed):
-  <pre><code>(head -1 Mut\_OnGenes\_demo.depth.tsv; sed -n '2,$p' Mut\_OnGenes\_demo.depth.tsv | sort -k1,1 -k2n) | bgzip -c > Mut\_OnGenes\_demo.depth.tsv.bgz</code></pre>
+  <pre><code>(head -1 depth.tsv; sed -n '2,$p' depth.tsv | sort -k1,1 -k2n) | bgzip -c > depth.tsv.bgz</code></pre>
 
 # Display Interactions
 
