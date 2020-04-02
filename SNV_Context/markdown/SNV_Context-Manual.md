@@ -4,7 +4,7 @@
 ##### [Download](https://raw.githubusercontent.com/Nobel-Justin/Oviz-Bio-demo/master/SNV_Context/demo_data/SNV_Context_demo_Region.bed) and [Check](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_Region.bed) the `Region BED input` (optional). -->
 
 # Introduction
-The 'Context' visualization, otherwise known as the 'Lego plot' of mutational frequencies, describes the distribution of mutations across batch samples on a given region. Base substitutions are divided into six types to represent the six possible base changes (each type represented by a different color as shown in the “Mutation Type” legend). Substitutions in each type are further subdivided by the 16 possible flanking nucleotides surrounding the mutated base as listed in the “Trinucleotide Context” table. The pie chart illustrates the percentage of all mutations types in said batch samples. To visualize data, upload a **BGZ** file in the *required* format and use sidebar options to customize the display.
+The 'Context' visualization, otherwise known as the 'Lego plot' of mutational frequencies, describes the distribution of mutations across batch samples on a given region. Base substitutions are divided into six types to represent the six possible base changes (each type represented by a different color as shown in the “Mutation Type” legend). Substitutions in each type are further subdivided by the 16 possible flanking nucleotides surrounding the mutated base as listed in the “Trinucleotide Context” table. The pie chart illustrates the percentage of all mutations types in said batch samples.
 
 # Input Files
 Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data).
@@ -21,20 +21,17 @@ Or, a simple **TSV** file in the format specified below.
 - `#` prefix is mandatory to indicate the header line.
 - `contig` and `position` respectively stand for the chromosome and position of the mutation.
 - `ref_allele` and `alt_allele` respectively stand for the base before and after the mutation.
-- `tumor_f` is optional. We allow users to filter out mutations with `tumor_f` value lower than a custom threshold.
+- `tumor_f` is optional. We allow users to filter mutations with `tumor_f` value by custom condition.
 
 <!--   The TSV file must be `sorted` by chromosome and position, and compressed by `bgzip` tools for `tabix` indexing to support fast data processing at the backend of Oviz-Bio.<br/>
   For example [tsv file](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv), run the following command in the linux terminal (bgzip installed):
   <pre><code>(head -1 SNV\_Context\_demo\_MutList.tsv; sed -n '2,$p' SNV\_Context\_demo\_MutList.tsv | sort -k1,1 -k2n) | bgzip -c > SNV\_Context\_demo.tsv.bgz</code></pre>
  -->
-## Custom Bed File (optional)
+## Custom BED File (optional)
 
 A custom bed file allows users to replace the default region used in our website, which is the whole genome sequence. We will filter out mutations that are not in the custom region during the calculation. Note that the uploaded bed file is only applied when you **choose the custom bed option** in the **Settings** section of the sidebar. 
 
-The uploaded **TSV** file must match the *required* format as specified below.
-
-- **header**<br/>
-  The header should follow the following format:
+The uploaded **BED** file must match the *required* format as specified below (plase keep the header).
 
 | #chr |  startPos |  endPos |
 |---|---|---|

@@ -46,7 +46,7 @@ The sidebar provides diverse options to fine-tune the display, like managing fil
   - __*File Sets*__: save the three files together as a file set. Users can also choose to apply one file set from all saved ones.
 - **Errors**<br/>
   Error genes are the genes in the uploaded amp\_genes.conf\_90 or del\_genes.conf\_90 file but not found in our database.
-  - __*Error genes in Amp*__: list of error genes in amplitude.
+  - __*Error genes in Amp*__: list of error genes in amplification.
   - __*Error genes in Del*__: list of error genes in deletion.
 - **Setting**<br/>
   - __*q-value*__: setting the q-value threshold between 0.1 to 0.9.
