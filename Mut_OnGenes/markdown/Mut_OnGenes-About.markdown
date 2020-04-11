@@ -1,5 +1,5 @@
 # Version
-v1.0.4 (2020-01-29)
+v1.0.5 (2020-04-11)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
@@ -8,6 +8,13 @@ Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
 Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEAAAAJ), [ORCID](https://orcid.org/0000-0002-7136-9919), [GitHub](https://github.com/Nobel-Justin))
 
 ## Updates
+
+### v1.0.5
+   - refine the mutation legend.
+   - refine colour settings.
+   - add colour themes of cBioPortal and scientific journals.
+   - refine exon numbers of negative strand gene.
+   - show exon number in default.
 
 ### v1.0.4
    - fix page refreshing when task finished.

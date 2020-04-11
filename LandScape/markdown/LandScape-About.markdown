@@ -1,5 +1,5 @@
 # Version
-v1.1.0 (2020-01-09)
+v1.1.0 (2020-04-11)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
@@ -11,6 +11,7 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
 
 ### v1.1.0
    - refine group list when reorder in histogram panel.
+   - apply white as default 'N/A' colour in Light Theme.
 
 ### v1.0.9
    - refine name setting of histogram-panel.

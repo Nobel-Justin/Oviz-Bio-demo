@@ -9,7 +9,7 @@ Fusion gene is a chimeric transcript consists of gene bodies from two or more pr
 
 ## Fusion TSV File
 
-Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Fusion_Genes/demo_data).<br/>
+Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/Fusion_Trans_Junction/demo_data).<br/>
 The uploaded **TSV** file must match the *required* format as specified below.
 
 | #Sample-ID |  up_gene | up_chr | up_pos |  up_covlen | down_gene | down_chr | down_pos |  down_covlen |
