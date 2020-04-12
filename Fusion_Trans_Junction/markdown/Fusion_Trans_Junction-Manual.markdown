@@ -18,7 +18,8 @@ The uploaded **TSV** file must match the *required* format as specified below.
 
   - the first line should be the `header` as specified above.
   - `up_pos` and `down_pos` are genomic coordinates in the genome, currently we require the position must locate in `exon region` of relevant genes.
-  - `up_covlen` and `down_covlen` respectively stand for the distance fusion supporting reads extend from the junction position of upstream (5') and downstream (3') fusion partern genes. Note that the `up_covlen` and `down_covlen` are optional, i.e., these two columns could be deleted.
+  - `up_covlen` and `down_covlen` respectively stand for the distance extended from the junction position of upstream (5') and downstream (3') fusion partern transcripts. 
+  - NOTE that the `up_covlen` and `down_covlen` are optional, i.e., these two columns could be omitted.
   - this file is easy to prepare from the result of common fusion tools, such as SOAPfuse. See more relevant information from SOAPfuse [wiki](https://sourceforge.net/p/soapfuse/wiki/Output_Files/) page.
 
 
@@ -45,4 +46,4 @@ Reference normal gene body of fusion partners are displayed with junction positi
   - enbale or disable Simplified mode.
   - display transcript name rather than gene name.
 
-*Manual version=1.3*, written by Dr. JIA Wenlong on 2020-04-02.
+*Manual version=1.4*

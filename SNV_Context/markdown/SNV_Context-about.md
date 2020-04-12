@@ -1,5 +1,5 @@
 # Version
-v1.0.3 (2020-04-11)
+v1.0.3 (2020-04-12)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))<br/>
@@ -13,6 +13,7 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
 ### v1.0.3
    - refine the figure legend.
    - add colour themes of COSMIC and scientific journals.
+   - support MAF and VCF input file.
 
 ### v1.0.2
    - refine filter option notes.

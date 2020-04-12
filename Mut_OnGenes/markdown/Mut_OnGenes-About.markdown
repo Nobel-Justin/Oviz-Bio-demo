@@ -1,5 +1,5 @@
 # Version
-v1.0.5 (2020-04-11)
+v1.0.5 (2020-04-12)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
@@ -15,6 +15,7 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
    - add colour themes of cBioPortal and scientific journals.
    - refine exon numbers of negative strand gene.
    - show exon number in default.
+   - support MAF and VCF input file.
 
 ### v1.0.4
    - fix page refreshing when task finished.

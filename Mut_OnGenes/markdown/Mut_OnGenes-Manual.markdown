@@ -11,12 +11,17 @@ Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-de
 
 ## Mutation File
 
-Note that backend annotation task will be activated once mutation file is uploaded. User could check the job status in task monitor at the bottom of analysis page.<br/>
-This file could be standard **MAF** file (see [format](https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)) or a simple **CSV** file in format specified below (please keep the `header`).
+Note that backend annotation task will be activated once the mutation file is uploaded. User could check the job status in task monitor at the bottom of this page.<br/>
+This input file could be standard **MAF** file (see [format](https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)) or **VCF** file.<br/>
+Or, a simple **CSV** file in format specified below.
 
 | #SampleID |  alt_type |  chr | pos |  ref_allele | alt_allele | gene |
 |---|---|---|---|---|---|---|---|
 | TCGA-AK-3451 | SNP | chr3 | 10183646 | G | A | VHL |
+
+- the first line should be the `header` as specified above.
+- `#` prefix is mandatory to indicate the header line.
+- currently, `alt_type` allows `SNP`, `DEL`, and `INS`.
 
 ## Depth TSV BGZ File (Optional)
 
@@ -76,4 +81,4 @@ The uploaded file must match the *required* format as specified below.
   - reset the UTR:CDS displaying resolution scale in cDNA level.
   - enbale or disable displaying depth spectrum.
 
-*Manual version=1.4*, written by Dr. JIA Wenlong on 2020-04-02.
+*Manual version=1.5*

@@ -10,8 +10,8 @@ The 'Context' visualization, otherwise known as the 'Lego plot' of mutational fr
 Check the official demo input [here](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data).
 
 ## SNV File
-This input file could be standard **MAF** file (see [format](https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)) or **VCF** file.
-
+Note that backend annotation task will be activated once the SNV file is uploaded. User could check the job status in task monitor at the bottom of this page.<br/>
+This input file could be standard **MAF** file (see [format](https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/)) or **VCF** file.<br/>
 Or, a simple **TSV** file in the format specified below.
 
 | #contig |  position | ref_allele |  alt_allele | tumor_f |
@@ -22,7 +22,8 @@ Or, a simple **TSV** file in the format specified below.
 - `#` prefix is mandatory to indicate the header line.
 - `contig` and `position` respectively stand for the chromosome and position of the mutation.
 - `ref_allele` and `alt_allele` respectively stand for the base before and after the mutation.
-- `tumor_f` is optional. We allow users to filter mutations with `tumor_f` value by custom condition.
+- users could filter mutations with `tumor_f` value by custom condition in the sidebar.
+- NOTE that the `tumor_f` is optional, i.e., this column could be omitted.
 
 <!--   The TSV file must be `sorted` by chromosome and position, and compressed by `bgzip` tools for `tabix` indexing to support fast data processing at the backend of Oviz-Bio.<br/>
   For example [tsv file](https://github.com/Nobel-Justin/Oviz-Bio-demo/blob/master/SNV_Context/demo_data/SNV_Context_demo_MutList.tsv), run the following command in the linux terminal (bgzip installed):
@@ -67,4 +68,4 @@ The sidebar provides diverse options to fine-tune the display, namely managing f
   - __*Y axis*__: provide three measurements of the mutation count, namely the numeric sum of the mutation, mutations per Mb and the percentage among all mutations.
   - __*Filter by tumor\_f*__: choose the compare method and the threshold for filtering mutations.
 
-*Manual version=1.4*, written by Miss. Li Shiying and Dr. JIA Wenlong on 2020-04-02.
+*Manual version=1.5*
