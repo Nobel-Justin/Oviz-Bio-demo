@@ -1,5 +1,5 @@
 # Version
-v1.0.3 (2020-04-12)
+v1.0.4 (2020-05-18)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))<br/>
@@ -10,10 +10,15 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
 
 ## Updates
 
+### v1.0.4
+   - show single sample data.
+   - show average data of multiple samples.
+   - update MAF format demo data.
+
 ### v1.0.3
    - refine the figure legend.
    - add colour themes of COSMIC and scientific journals.
-   - support MAF and VCF input file.
+   - support MAF and VCF input files.
 
 ### v1.0.2
    - refine filter option notes.

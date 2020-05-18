@@ -1,5 +1,5 @@
 # Version
-v1.0.5 (2020-04-12)
+v1.0.6 (2020-05-18)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
@@ -8,6 +8,10 @@ Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
 Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEAAAAJ), [ORCID](https://orcid.org/0000-0002-7136-9919), [GitHub](https://github.com/Nobel-Justin))
 
 ## Updates
+
+### v1.0.6
+   - add manual selection of samples.
+   - add quick selection of mutation types.
 
 ### v1.0.5
    - refine the mutation legend.
@@ -18,19 +22,19 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
    - support MAF and VCF input file.
 
 ### v1.0.4
-   - fix page refreshing when task finished.
-   - fix link of job name in task monitor.
-   - change 'Depth File' as optinal input.
-   - fix displaying of transcript without domains.
-   - allow to hide the depth spectrum.
+   - fix page refreshing when a task finishes.
+   - fix job name link in task monitor.
+   - change 'Depth File' as optional input.
+   - fix displaying of the transcript without domains.
+   - allow hiding the depth spectrum.
 
 ### v1.0.3
    - task monitor for mutation annotation.
-   - display AA changes on protein level.
+   - display AA changes on the protein level.
    - update mutation icons.
    - fix sidebar transcript selection.
    - fix the exon interval display on each level.
-   - fix the current range display of minus strand gene.
+   - fix the current range display of the minus-strand gene.
    - fill the exon gap on cDNA and protein levels.
 
 ### v1.0.2

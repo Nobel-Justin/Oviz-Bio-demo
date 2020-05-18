@@ -1,5 +1,5 @@
 # Version
-v1.1.0 (2020-04-11)
+v1.1.1 (2020-05-18)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
@@ -8,6 +8,10 @@ Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
 Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEAAAAJ), [ORCID](https://orcid.org/0000-0002-7136-9919), [GitHub](https://github.com/Nobel-Justin))
 
 ## Updates
+
+### v1.1.1
+   - add manual selection of samples.
+   - refine highlights of column and row in Light Theme.
 
 ### v1.1.0
    - refine group list when reorder in histogram panel.
