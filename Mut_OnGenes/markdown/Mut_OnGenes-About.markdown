@@ -1,5 +1,5 @@
 # Version
-v1.0.6 (2020-05-18)
+v1.0.7 (2020-06-15)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
@@ -8,6 +8,10 @@ Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
 Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEAAAAJ), [ORCID](https://orcid.org/0000-0002-7136-9919), [GitHub](https://github.com/Nobel-Justin))
 
 ## Updates
+
+### v1.0.7
+   - use global exon number instead of index on protein layer.
+   - resolve quotation marks in exported csv file.
 
 ### v1.0.6
    - add manual selection of samples.

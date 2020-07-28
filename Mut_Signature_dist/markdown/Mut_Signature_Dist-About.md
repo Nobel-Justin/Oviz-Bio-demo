@@ -1,5 +1,5 @@
 # Version
-v1.0.2 (2020-05-18)
+v1.0.2 (2020-07-28)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))</br>
@@ -12,6 +12,8 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
 
 ### v1.0.2
    - add samples hierarchical clustering.
+   - allow to flip tree by clicking node.
+   - accept the scientific notation.
 
 ### v1.0.1
    - add the light theme.
