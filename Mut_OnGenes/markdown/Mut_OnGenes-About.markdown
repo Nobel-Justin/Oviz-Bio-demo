@@ -1,8 +1,9 @@
 # Version
-v1.0.7 (2020-06-15)
+v1.0.7 (2020-08-15)
 
 # Developer
-Mr. LI Hechen ([GitHub](https://github.com/lhc70000))
+Mr. LI Hechen ([GitHub](https://github.com/lhc70000))<br/>
+Miss. LI Shiying ([GitHub](https://github.com/CherineLee))
 
 # Designer
 Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEAAAAJ), [ORCID](https://orcid.org/0000-0002-7136-9919), [GitHub](https://github.com/Nobel-Justin))
@@ -12,6 +13,8 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
 ### v1.0.7
    - use global exon number instead of index on protein layer.
    - resolve quotation marks in exported csv file.
+   - apply the lollipop style.
+   - add information text frame of mutation icons.
 
 ### v1.0.6
    - add manual selection of samples.

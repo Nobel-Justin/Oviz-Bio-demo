@@ -1,5 +1,5 @@
 # Version
-v1.0.3 (2020-07-28)
+v1.0.3 (2020-08-15)
 
 # Developer
 Mr. LI Hechen ([GitHub](https://github.com/lhc70000))<br/>
@@ -12,6 +12,11 @@ Dr. JIA Wenlong ([Scholar](https://scholar.google.com.hk/citations?user=eupQCQEA
 
 ### v1.0.3
    - fix the 'empty line' error.
+   - allow gene selection in cluster frames.
+   - dash-line frame for omitted gene.
+   - use gene orders from inputs.
+   - fill up the omitted genome region.
+   - optimize the frame arrangement.
 
 ### v1.0.2
    - fix overlapped gene blocks.
