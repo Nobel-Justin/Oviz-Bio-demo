@@ -2,6 +2,10 @@
 
 Documents of [Oviz-Bio](https://bio.oviz.org/), a Platform for Bioinformatics Visualization
 
+# Publication
+
+Jia, Wenlong, Hechen Li, Shiying Li, Lingxi Chen, and Shuai Cheng Li. "[Oviz-Bio: a web-based platform for interactive cancer genomics data visualization.](https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkaa371)" Nucleic Acids Research (2020).
+
 # Intergrated
 
 ## LandScape
